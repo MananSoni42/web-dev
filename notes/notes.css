@@ -1,0 +1,37 @@
+.body {
+}
+
+.title-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr;
+  text-align: center;
+  align-content: center;
+  background-color: blue;
+  padding: 10px;
+}
+
+.info-bar {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  align-content: center;
+  background-color: red;
+  padding: 10px;
+}
+
+.notes-bar {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  text-align: center;
+  align-content: center;
+  background-color: green;
+  padding: 10px;
+}
+
+.note {
+  padding: 5px;
+  background-color: yellow;
+  border-bottom-right-radius: 10px;
+}
