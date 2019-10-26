@@ -1,24 +1,58 @@
-.body {
+.title-bar {
+  background-color: #083D77;
+  padding: 10px;
 }
 
-.title-bar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 5fr;
-  text-align: center;
+#logo {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 200%;
+  letter-spacing: 0.5em;
+  font-weight: bold;
+  color: rgba(237, 212, 73, 0.85);
+}
+
+#normal {
+  font-size: 50%;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#name {
+  color: #EDD449;
   align-content: center;
-  background-color: blue;
-  padding: 10px;
 }
 
 .info-bar {
-  display: grid;
-  grid-template-columns: auto;
-  text-align: center;
-  align-content: center;
-  background-color: red;
-  padding: 10px;
+  background-color: #DA4167;
+  padding-top: 30px;
 }
 
+textarea {
+  min-width: 100%;
+}
+button {
+  background: none;
+  border: 10px;
+  outline: none;
+  margin: 2vmax;
+}
+
+button:hover small {
+  opacity: 1;
+}
+
+button:hover .send-icn {
+  fill: rgba(0, 0, 0, 1)
+}
+
+.send-icn {
+  fill: rgba(255, 255, 255, 1)
+}
+
+small {
+  display: block;
+  opacity: 0;
+}
 .notes-bar {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -26,12 +60,16 @@
   grid-row-gap: 2em;
   text-align: center;
   align-content: center;
-  background-color: green;
-  padding: 10px;
+  padding: 25px;
 }
 
 .note {
   padding: 5px;
-  background-color: yellow;
+  background-color: #EDD449;
   border-bottom-right-radius: 10px;
+}
+
+hr.line {
+  border-top: 1px solid magenta;
+  width: 50%;
 }
