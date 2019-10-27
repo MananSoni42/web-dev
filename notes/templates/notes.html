@@ -2,28 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Homemade+Apple|Kaushan+Script|Black+Ops+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="notes.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='notes.css')}}">
+  <title>Notes</title>
 </head>
 <body class="bg-dark">
   <div class="container-fluid">
     <div class="row title-bar text-center">
       <div id="image" class="col-2">
-        <img src="assets/logo.png" width=20% class="img-fluid float-left" alt="Logo">
+        <img src="{{url_for('static',filename='logo.png')}}" width=20% class="img-fluid float-left" alt="Logo">
       </div>
       <div id="logo" class="col-8 float-center">
         NOTES<span id="normal">.com</span>
       </div>
       <div id="name" class="col-2 float-right">
-        Hello, Name
+        {% if notes|length > 0 %}
+        Welcome back, {{name}}
+        {% else %}
+        Hello, {{name}}
+        {% endif %}
       </div>
     </div>
     <div class="row info-bar text-center d-flex justify-content-around">
-      <form action="#">
+      <form action="{{url_for('name_page',name=name)}}" method="POST">
         <div class="form-group col-12">
-          <textarea type="text" id="fname" class="form-control" name="firstname" placeholder="Your note here"></textarea>
+          <input type="text" id="note-title" class="form-control" name="note-title" placeholder="Title of your note"></textarea>
+        </div>
+        <div class="form-group col-12">
+          <textarea type="text" id="note-body" class="form-control" name="note-body" placeholder="Your note here"></textarea>
         </div>
         <div class="form-group">
           <button type="submit">
@@ -37,11 +44,20 @@
       </form>
     </div>
     <div class="notes-bar">
-      <div class="note">
-        <h3>Note1 - title</h3>
-        <hr class="line">
-        Lorem ipsum dolor sit amet.
-      </div>
+      {% if notes|length > 0 %}
+        {% for note in notes %}
+          <div class="note">
+            <span class="note-title"><h3>{{note["title"]}}</h3></span>
+            <span class="note-date">{{note["date"]}}</span>
+            <hr class="line">
+            {{note["body"]}}
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="no-note text-warning text-center">
+            No notes added yet
+        </div>
+      {% endif %}
     </div>
   </div>
 </body>
