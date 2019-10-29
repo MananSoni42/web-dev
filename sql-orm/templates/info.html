@@ -1,0 +1,37 @@
+{% extends "super.html" %}
+{% block content %}
+  <div class="row text-center">
+    <div class="col-12 display-4">
+      Information for flight number: {{flight[0]}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 h5">
+      Origin: {{flight[1]}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 h5">
+    Destination: {{flight[2]}}
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-12 h5">
+      Duration: {{flight[3]}}
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-12">
+      Passengers
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <ul class="list-group">
+        {% for passenger in passengers%}
+        <li class="list-group-item">{{passenger}}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endblock %}

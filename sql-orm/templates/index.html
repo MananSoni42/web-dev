@@ -1,0 +1,16 @@
+{% extends "super.html" %}
+{% block content %}
+  <div class="row text-center">
+    <div class="col-8 display-4">
+      You can visit the following links:
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="{{url_for('book')}}">Book a flight</a>
+        <li class="list-group-item"><a href="{{url_for('list_flights')}}">View all current flights</a>
+      </ul>
+    </div>
+  </div>
+{% endblock %}

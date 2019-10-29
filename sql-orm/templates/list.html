@@ -1,0 +1,17 @@
+{% extends "super.html" %}
+{% block content %}
+  <div class="row text-center">
+    <div class="col-8 display-4">
+      Available flights (click on any one to get more details):
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <ul class="list-group">
+        {% for flight in flights%}
+        <li class="list-group-item"><a href="{{url_for('get_flight_by_id', fl_id=flight[0])}}">{{flight[1]}}</a>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endblock %}

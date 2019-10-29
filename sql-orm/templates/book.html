@@ -1,0 +1,27 @@
+{% extends "super.html" %}
+{% block content %}
+  <div class="row">
+    <div class="col-8 display-4">
+      Select a flight and enter your name to book a ticket.
+    </div>
+  </div>
+
+<div class="row">
+  <form action="{{url_for('success')}}" method="POST">
+    <div class="form-group">
+      <select class="custom-select" name="fl_id">
+        <option selected>Select a flight</option>
+        {% for flight in flights %}
+        <option value="{{loop.index0}}">{{flight}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">submit</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
