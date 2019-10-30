@@ -1,0 +1,32 @@
+{% extends "super.html" %}
+
+{% block style %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+
+{% block content %}
+  <div class="row top-bar h-10 bg-primary">
+    <div class="col-1 logo">
+      <img src="{{url_for('static',filename='logo.png')}}" alt="logo" class="img-fluid rounded float-left">
+    </div>
+    <div class="col-9 name h2 text-center text-warning">
+      Manan's book repository
+    </div>
+    <div class="col-1 sign-up text-center">
+      <a href="{{url_for('sign_up')}}" class="btn btn-outline-light">Sign Up</a>
+    </div>
+    <div class="col-1 log-in text-center">
+      <a href="{{url_for('log_in')}}" class="btn btn-light">Log in</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10 info h3 text-light">
+      <span class="display-4">A Personal Library, at your fingertips</span>
+      <ul class=".list-group-flush">
+      <li class=".list-group-item"> Find any Book from all over the world!
+      <li class=".list-group-item"> Rate books that you have read
+      <li class=".list-group-item"> and much more ...
+     </ul>
+    </div>
+  </div>
+{% endblock %}

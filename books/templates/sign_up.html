@@ -1,0 +1,58 @@
+{% extends "super.html" %}
+
+{% block style %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='sign_up.css') }}">
+{% endblock %}
+
+{% block content %}
+  <div class="row top-bar h-10 bg-primary">
+    <div class="col-1 logo">
+      <img src="{{url_for('static',filename='logo.png')}}" alt="logo" class="img-fluid rounded float-left">
+    </div>
+    <div class="col-9 name h2 text-center text-warning">
+      Manan's book repository
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3 signup h3 text-muted col-centered text-center">
+      Sign up
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5 signup h3 text-light col-centered">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="First Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">e-mail</label>
+          <input type="text" class="form-control" id="email" placeholder="abc@xyz.com">
+        </div>
+        <div class="form-group">
+          <label for="uname">Username</label>
+          <input type="text" class="form-control" id="uname" placeholder="Username">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fname">Password</label>
+            <input type="password" class="form-control" id="pass" placeholder="password">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lname">Re-enter Password</label>
+            <input type="pasword" class="form-control" id="repass" placeholder="password">
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
