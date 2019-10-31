@@ -1,12 +1,6 @@
 {% extends super.css %}
 
 {% block css-styles %}
-.sign-up {
-  margin: auto;
-}
-.log-in {
-  margin: auto;
-}
 .info {
   margin: auto;
   margin-top: 20px;

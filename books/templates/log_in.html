@@ -4,20 +4,15 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='log_in.css') }}">
 {% endblock %}
 
+{% block nav_bar %}
+<ul class="navbar-nav mr-auto">
+</ul>
+<a href="{{url_for('index')}}" class="mx-1">
+  <button class="btn btn-outline-light my-2 my-sm-0" type="button">back</button>
+</a>
+{% endblock %}
+
 {% block content %}
-  <div class="row top-bar h-10 bg-primary">
-    <div class="col-1 logo">
-      <img src="{{url_for('static',filename='logo.png')}}" alt="logo" class="img-fluid rounded float-left">
-    </div>
-    <div class="col-9 name h2 text-center text-warning">
-      Manan's book repository
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-3 login h3 text-muted text-center col-centered">
-      Log-in to your Account
-    </div>
-  </div>
   <div class="row">
     <div class="col-3 login h3 text-light col-centered">
       <form>

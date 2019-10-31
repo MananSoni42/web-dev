@@ -14,5 +14,9 @@ def sign_up():
 def log_in():
     return render_template("log_in.html")
 
+@app.route("/home", methods=['GET'])
+def home():
+    return render_template("home.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
