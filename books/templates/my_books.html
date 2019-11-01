@@ -6,10 +6,10 @@
 
 {% block nav_bar %}
 <ul class="navbar-nav mr-auto">
-  <li class="nav-item active">
+  <li class="nav-item">
     <a class="nav-link" href="{{url_for('home')}}">Home</a>
   </li>
-  <li class="nav-item">
+  <li class="nav-item active">
     <a class="nav-link" href="{{url_for('my_books')}}">My Books</a>
   </li>
   <li class="nav-item">
@@ -25,22 +25,6 @@
 {% block content %}
 <div class="container">
   <div class="row">
-    <div class="col-2 m-3 mt-5 mb-2">
-      <a class="black-text" href="{{url_for('static',filename='book.jpeg')}}"
-        data-size="1600x1067">
-        <img alt="picture" src="{{url_for('static',filename='book.jpeg')}}"
-          class="img-fluid img-thumbnail">
-        <h4 class="text-center text-light my-1">The Design Hustle</h4><small class="text-center text-secondary my-1"> - Douglas Adamss</small>
-      </a>
-    </div>
-    <div class="col-2 m-3 mt-5 mb-2">
-      <a class="black-text" href="{{url_for('static',filename='book.jpeg')}}"
-        data-size="1600x1067">
-        <img alt="picture" src="{{url_for('static',filename='book.jpeg')}}"
-          class="img-fluid img-thumbnail">
-        <h4 class="text-center text-light my-1">The Design Hustle</h4><small class="text-center text-secondary my-1"> - Douglas Adamss</small>
-      </a>
-    </div>
     <div class="col-2 m-3 mt-5 mb-2">
       <a class="black-text" href="{{url_for('static',filename='book.jpeg')}}"
         data-size="1600x1067">
