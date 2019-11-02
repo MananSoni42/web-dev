@@ -1,7 +1,7 @@
 {% extends "super.html" %}
 
 {% block style %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/my_books.css') }}">
 {% endblock %}
 
 {% block nav_bar %}
@@ -26,17 +26,17 @@
 <div class="container">
   <div class="row">
     <div class="col-2 m-3 mt-5 mb-2">
-      <a class="black-text" href="{{url_for('static',filename='book.jpeg')}}"
+      <a class="black-text" href="{{url_for('static',filename='imgs/book.jpeg')}}"
         data-size="1600x1067">
-        <img alt="picture" src="{{url_for('static',filename='book.jpeg')}}"
+        <img alt="picture" src="{{url_for('static',filename='imgs/book.jpeg')}}"
           class="img-fluid img-thumbnail">
         <h4 class="text-center text-light my-1">The Design Hustle</h4><small class="text-center text-secondary my-1"> - Douglas Adamss</small>
       </a>
     </div>
     <div class="col-2 m-3 mt-5 mb-2">
-      <a class="black-text" href="{{url_for('static',filename='book.jpeg')}}"
+      <a class="black-text" href="{{url_for('static',filename='imgs/book.jpeg')}}"
         data-size="1600x1067">
-        <img alt="picture" src="{{url_for('static',filename='book.jpeg')}}"
+        <img alt="picture" src="{{url_for('static',filename='imgs/book.jpeg')}}"
           class="img-fluid img-thumbnail">
         <h4 class="text-center text-light my-1">The Design Hustle</h4><small class="text-center text-secondary my-1"> - Douglas Adamss</small>
       </a>

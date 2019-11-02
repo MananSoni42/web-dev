@@ -1,7 +1,7 @@
 {% extends "super.html" %}
 
 {% block style %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/book.css') }}">
 {% endblock %}
 
 {% block nav_bar %}
@@ -26,7 +26,7 @@
 <div class="container">
   <div class="row mt-5">
     <div class="col-3">
-      <img src="{{url_for('static',filename='book_cover.jpeg')}}" alt="book cover" class="img-fluid img-thumbnail cover">
+      <img src="{{url_for('static',filename='imgs/book_cover.jpeg')}}" alt="book cover" class="img-fluid img-thumbnail cover">
     </div>
     <div class="col-9">
       <table class="table table-dark table-borderless text-light">

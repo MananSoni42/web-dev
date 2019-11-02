@@ -1,6 +1,10 @@
 from flask import Flask, render_template, request
+from model import db,User,Review
 
 app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://manan:password@localhost/manan'
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db.init_app(app)
 
 @app.route("/", methods=['GET'])
 def index():
@@ -33,6 +37,10 @@ def book():
 @app.route("/review", methods=['GET'])
 def review():
     return render_template("review.html")
+
+@app.route("/error", methods=['GET'])
+def error():
+    return render_template("error.html")
 
 if __name__ == '__main__':
     app.run(debug=True)

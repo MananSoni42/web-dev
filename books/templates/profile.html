@@ -1,7 +1,7 @@
 {% extends "super.html" %}
 
 {% block style %}
-  <link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/profile.css') }}">
 {% endblock %}
 
 {% block nav_bar %}
@@ -28,7 +28,7 @@
     <div class="col-8">
       <div class="card bg-secondary mt-5">
         <div class="text-center mt-3">
-          <img alt="Profile photo" class="card-img-top" src="{{url_for('static',filename='profile.jpeg')}}" />
+          <img alt="Profile photo" class="card-img-top" src="{{url_for('static',filename='imgs/profile.jpeg')}}" />
         </div>
         <div class="card-body text-light text-center">
           <h5 class="card-title">Manan Soni</h5>
