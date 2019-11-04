@@ -16,33 +16,33 @@
 {% block content %}
   <div class="row">
     <div class="col-5 signup h3 text-light col-centered">
-      <form>
+      <form action="{{url_for('sign_up')}}" method="post">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="fname">First Name</label>
-            <input type="text" class="form-control" id="fname" placeholder="First Name">
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
           </div>
           <div class="form-group col-md-6">
             <label for="lname">Last Name</label>
-            <input type="text" class="form-control" id="lname" placeholder="Last Name">
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
           </div>
         </div>
         <div class="form-group">
           <label for="email">e-mail</label>
-          <input type="text" class="form-control" id="email" placeholder="abc@xyz.com">
+          <input type="email" class="form-control" id="email" name="email" placeholder="abc@xyz.com">
         </div>
         <div class="form-group">
           <label for="uname">Username</label>
-          <input type="text" class="form-control" id="uname" placeholder="Username">
+          <input type="text" class="form-control" id="uname" name="uname" placeholder="Username">
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="fname">Password</label>
-            <input type="password" class="form-control" id="pass" placeholder="password">
+            <input type="password" class="form-control" id="pass" name="pass" placeholder="password">
           </div>
           <div class="form-group col-md-6">
             <label for="lname">Re-enter Password</label>
-            <input type="pasword" class="form-control" id="repass" placeholder="password">
+            <input type="password" class="form-control" id="repass" name="repass" placeholder="password">
           </div>
         </div>
         <div class="form-actions">

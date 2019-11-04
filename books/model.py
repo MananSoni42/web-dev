@@ -5,10 +5,10 @@ db = SQLAlchemy()
 
 class User(db.Model):
     __tablename__ = "users"
-    id = db.Column(db.Integer, primary_key=True)
+    uname = db.Column(db.String, primary_key=True, nullable=False, unique=True)
     fname = db.Column(db.String, nullable=False)
     lname = db.Column(db.String, nullable=False)
-    uname = db.Column(db.String, nullable=False)
+    mail = db.Column(db.String, nullable=False, unique=True)
     password = db.Column(PasswordType(
             schemes=[
                 'pbkdf2_sha512',
@@ -22,7 +22,7 @@ class User(db.Model):
         return self.password == password
 
     def __str__(self):
-        return f'{self.id} - {self.fname} {self.lname}: {self.uname}'
+        return f'{self.uname} - {self.fname} {self.lname}: {self.mail}'
 
 class Review(db.Model):
     __tablename__ = "passengers"

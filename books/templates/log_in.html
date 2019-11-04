@@ -15,10 +15,10 @@
 {% block content %}
   <div class="row">
     <div class="col-3 login h3 text-light col-centered">
-      <form>
+      <form action="{{url_for('log_in')}}" method="post">        
         <div class="form-group text-center">
           <label for="uname">Username</label>
-          <input type="email" class="form-control" id="uname" name="uname" aria-describedby="emailHelp" placeholder="Enter Username">
+          <input type="text" class="form-control" id="uname" name="uname" aria-describedby="emailHelp" placeholder="Enter Username">
         </div>
         <div class="form-group text-center col-centered">
           <label for="pass">Password</label>

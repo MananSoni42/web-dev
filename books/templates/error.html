@@ -1,5 +1,13 @@
 {% extends "super.html" %}
 
+{% block nav_bar %}
+<ul class="navbar-nav mr-auto">
+</ul>
+<a href="{{url_for(callback)}}" class="mx-1">
+  <button class="btn btn-outline-light my-2 my-sm-0" type="button">back</button>
+</a>
+{% endblock %}
+
 {% block content %}
 <div class="container">
   <div class="row justify-content-center text-light">
@@ -9,7 +17,7 @@
   </div>
   <div class="row justify-content-center text-secondary">
     <div class="col-6">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis libero debitis nisi deleniti magni, dolores nemo iste! Adipisci obcaecati praesentium quasi, ex nesciunt doloribus quae saepe repudiandae repellendus voluptas eligendi laboriosam omnis vel explicabo qui. Maiores quo consectetur perspiciatis error quia dolorum, fuga voluptas perferendis nemo eaque libero nulla, in eius pariatur! Eligendi ducimus sint debitis esse aperiam totam facilis laboriosam necessitatibus fuga, temporibus qui aspernatur nam error illo eum ad modi similique repellendus placeat, quis laudantium quam nostrum reiciendis adipisci dolores. Aperiam numquam minima natus, sapiente impedit assumenda iste recusandae cumque fugit harum nesciunt? Libero nihil perspiciatis nemo porro.
+      {{message}}
     </div>
   </div>
 </div>
