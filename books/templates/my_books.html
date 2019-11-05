@@ -20,6 +20,9 @@
   <input class="form-control mr-sm-2" type="search" placeholder="Find books here" aria-label="Search">
   <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
 </form>
+<form class="form-inline mx-2">
+  <button class="btn btn-light my-2 my-sm-0" type="button"><a href="{{url_for('log_out')}}">Log out</a></button>
+</form>
 {% endblock %}
 
 {% block content %}

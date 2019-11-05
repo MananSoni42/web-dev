@@ -20,27 +20,35 @@
   <input class="form-control mr-sm-2" type="search" placeholder="Find books here" aria-label="Search">
   <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
 </form>
+<form class="form-inline mx-2">
+  <button class="btn btn-light my-2 my-sm-0" type="button"><a href="{{url_for('log_out')}}">Log out</a></button>
+</form>
 {% endblock %}
 
 {% block content %}
 <div class="container">
   <div class="row mt-5">
     <div class="col-3">
-      <img src="{{url_for('static',filename='imgs/book_cover.jpeg')}}" alt="book cover" class="img-fluid img-thumbnail cover">
+      <img src="{{book['img_url']}}" alt="book cover" class="img-fluid img-thumbnail cover">
     </div>
     <div class="col-9">
       <table class="table table-dark table-borderless text-light">
         <thead>
           <tr>
-            <th scope="col">Hitchiker's guide to the galaxy</th>
+            <th scope="col">{{book["title"]}}</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><small class="text-secondary">Douglas Adams</small></td>
+          <tr my-0>
+            <td><small class="text-secondary">
+              {{book["author"]}} <br>
+              ISBN: {{book["isbn"]}} <br>
+              Published in {{book["year"]}}
+                </small>
+            </td>
           </tr>
           <tr>
-            <td>Short description</td>
+            <td>{{book["summary"]}}</td>
           </tr>
         </tbody>
       </table>
@@ -53,7 +61,7 @@
           <a class="nav-link active" href="#summary">Summary</a>
         </li>
         <li class="nav-item ml-2">
-          <a class="nav-link text-light" href="{{url_for('review')}}">Reviews</a>
+          <a class="nav-link text-light" href="{{url_for('book', isbn=book['isbn'], review=True)}}">Reviews</a>
         </li>
       </ul>
     </div>
@@ -61,7 +69,7 @@
   <div class="row mt-0 text-light" id="summary">
     <div class="col-12">
       <span class="display-4">Summary</span><br>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius est, eum molestias. Incidunt voluptate praesentium ipsam ea sit similique fugit eaque atque quod tempore quo molestias consequatur provident consectetur, sequi, fuga dolorum asperiores magnam ipsa ipsum, illum nesciunt rem alias ducimus quibusdam! Necessitatibus facilis voluptatibus itaque hic inventore quae perspiciatis officia? Minima, doloribus, natus. Ab, accusamus, eius. Eum, necessitatibus. Ipsum, quod maiores dolor amet qui. Aliquid asperiores ullam harum amet ducimus, aspernatur a rem assumenda magni tempore velit blanditiis excepturi minima sapiente quis esse perferendis maiores voluptate numquam cumque adipisci dolores. Natus unde harum qui expedita necessitatibus fugit eaque tempora, at neque nostrum praesentium cupiditate error temporibus sit recusandae suscipit repellendus, assumenda iusto maiores! Illo consequatur vero expedita nihil sint dignissimos ex, praesentium quasi vitae iure cumque esse sequi perferendis cupiditate placeat fugiat minus quia, magnam. Error voluptatum voluptatibus molestiae nam. Perferendis ad cum veniam laborum ut repudiandae sapiente. Iste praesentium, ullam. Veniam dolorem modi nulla. Eaque expedita architecto placeat magni, fuga inventore sed animi maxime harum magnam enim neque. Quae quod quibusdam blanditiis, ea in. Distinctio quae deleniti sapiente quia rem, accusantium ipsum architecto eligendi animi eos suscipit eius fugit neque tenetur natus, illum, placeat nesciunt, quidem molestiae libero?
+        {{book["description"]}}
     </div>
   </div>
 </div>
