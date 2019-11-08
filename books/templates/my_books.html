@@ -16,8 +16,8 @@
     <a class="nav-link" href="{{url_for('profile')}}">My profile</a>
   </li>
 </ul>
-<form class="form-inline my-2 my-lg-0">
-  <input class="form-control mr-sm-2" type="search" placeholder="Find books here" aria-label="Search">
+<form class="form-inline my-2 my-lg-0" action="{{url_for('search')}}" method="get">
+  <input class="form-control mr-sm-2" type="search" name="title" placeholder="Find books here" aria-label="Search">
   <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
 </form>
 <form class="form-inline mx-2">
@@ -28,22 +28,16 @@
 {% block content %}
 <div class="container">
   <div class="row">
+    {% for book in books %}
     <div class="col-2 m-3 mt-5 mb-2">
-      <a class="black-text" href="{{url_for('static',filename='imgs/book.jpeg')}}"
+      <a class="black-text" href="{{url_for('book',isbn=book['isbn'])}}"
         data-size="1600x1067">
-        <img alt="picture" src="{{url_for('static',filename='imgs/book.jpeg')}}"
+        <img alt="picture" src="{{book['img']}}"
           class="img-fluid img-thumbnail">
-        <h4 class="text-center text-light my-1">The Design Hustle</h4><small class="text-center text-secondary my-1"> - Douglas Adamss</small>
+        <h4 class="text-center text-light my-1">{{book["title"]}}</h4><small class="text-center text-secondary my-1"> - {{book["author"]}}</small>
       </a>
     </div>
-    <div class="col-2 m-3 mt-5 mb-2">
-      <a class="black-text" href="{{url_for('static',filename='imgs/book.jpeg')}}"
-        data-size="1600x1067">
-        <img alt="picture" src="{{url_for('static',filename='imgs/book.jpeg')}}"
-          class="img-fluid img-thumbnail">
-        <h4 class="text-center text-light my-1">The Design Hustle</h4><small class="text-center text-secondary my-1"> - Douglas Adamss</small>
-      </a>
-    </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}

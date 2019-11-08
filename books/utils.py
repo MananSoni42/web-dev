@@ -3,6 +3,13 @@ import requests
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup as soup
 from difflib import SequenceMatcher
+import numpy as np
+
+def search_from(lst,name,max_results=10):
+    n = min(max_results,len(lst))
+    sim = [get_similarity(name,l) for l in lst]
+    lst = np.array(lst)
+    return list(reversed(lst[np.argsort(sim)][-n:]))
 
 def generate_star_rating(rating):
     rating = round(rating * 2) / 2
@@ -24,7 +31,10 @@ def generate_star_rating(rating):
     return star_html
 
 def get_similarity(s1, s2):
-    """ Measure of how similar str s1 and s2 are. """
+    """
+    Measure of how similar str s1 and s2 are.
+    Scale from 0 to 1
+    """
     t0 = sorted(list(set(s1.split(' ')).intersection(set(s2.split(' ')))))
     t1 = sorted(list(set(t0 + s1.split(' '))))
     t2 = sorted(list(set(t0 + s2.split(' '))))

@@ -17,8 +17,8 @@
     <a class="nav-link" href="{{url_for('profile')}}">My profile</a>
   </li>
 </ul>
-<form class="form-inline my-2 my-lg-0">
-  <input class="form-control mr-sm-2" type="search" placeholder="Find books here" aria-label="Search">
+<form class="form-inline my-2 my-lg-0" action="{{url_for('search')}}" method="get">
+  <input class="form-control mr-sm-2" type="search" name="title" placeholder="Find books here" aria-label="Search">
   <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
 </form>
 <form class="form-inline mx-2">
@@ -33,7 +33,7 @@
     <div class="col-3">
       <img src="{{book['img_url']}}" alt="book cover" class="img-fluid img-thumbnail cover">
     </div>
-    <div class="col-9">
+    <div class="col-7">
       <table class="table table-dark table-borderless text-light">
         <thead>
           <tr>
@@ -55,12 +55,17 @@
         </tbody>
       </table>
     </div>
+    <div class="col-2 text-light">
+      <form class="form-inline mx-2">
+        <button class="btn btn-light my-2 my-sm-0" type="button"><a href="{{url_for('add_book', isbn=book['isbn'])}}">Add book</a></button>
+      </form>
+    </div>
   </div>
   <div class="row m-0 mt-5">
     <div class="col-12">
       <ul class="nav nav-tabs">
         <li class="nav-item  mr-2">
-          <a class="nav-link text-light" href="{{url_for('book', isbn=book['isbn'], review=False)}}">Summary</a>
+          <a class="nav-link text-light" href="{{url_for('book', isbn=book['isbn'])}}">Summary</a>
         </li>
         <li class="nav-item ml-2">
           <a class="nav-link active" href="#review">Reviews</a>

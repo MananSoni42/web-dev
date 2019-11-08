@@ -9,6 +9,7 @@ class Book(db.Model):
     title = db.Column(db.String, nullable=False)
     author = db.Column(db.String, nullable=False)
     year = db.Column(db.Integer, nullable=False)
+    img_url = db.Column(db.String, nullable=False, default='')
 
     def __str__(self):
         return f'{self.isbn} - {self.title} by {self.author} on {self.year}'
@@ -34,11 +35,12 @@ class User(db.Model):
 
     @property
     def books(self):
-        return [int(x) for x in self._books[:]]
+        return [x.strip() for x in self._books.split(';') if x.strip()]
 
-    @books.setter
-    def add_book(self,book_id):
-        self._books += f'{book_id};'
+    def add_book_user(self,book_id):
+        print(book_id,self.books)
+        if book_id not in self.books:
+            self._books += f'{book_id};'
 
     def __str__(self):
         return f'{self.uname} - {self.fname} {self.lname}: {self.mail}'
