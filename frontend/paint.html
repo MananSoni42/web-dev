@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="paint.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <title>Paint</title>
+</head>
+<body>
+  <div class="container-fluid h-100">
+    <div class="row bg-dark text-light text-center h-100">
+      <div class="col-12 display-3">
+        Manan's paint
+      <div>
+    </div>
+    <div class="row h-100">
+      <div class="col-3 bg-secondary">
+        <div class="row">
+          <div class="col-3 brush_size">
+            Brush size
+          </div>
+          <div class="col-9">
+            <select class="custom-select" id="thickness-pick">
+              <option value=1>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+              <option value=6>6</option>
+              <option value=7>7</option>
+              <option value=8>8</option>
+              <option value=9>9</option>
+              <option value=10>10</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 brush_size">
+            Color
+          </div>
+          <div class="col-9">
+            <select class="custom-select" id="color-pick">
+              <option value="black">Black</option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+            </select>
+          </div>
+        </div>
+        <div class="row justify-content-center my-3">
+          <button class="btn btn-light" id="erase"> Erase</button>
+        </div>
+      </div>
+      <div class="col-9 bg-light">
+        <svg id ="svg"></svg>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="paint.js"></script>
+</html>
