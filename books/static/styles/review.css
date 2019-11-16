@@ -1,0 +1,10 @@
+{% extends super.css %}
+
+{% block css-styles %}
+.cover {
+  max-height: 300px;
+}
+.checked {
+  color: yellow;
+}
+{% endblock %}

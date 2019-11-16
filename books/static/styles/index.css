@@ -1,0 +1,8 @@
+{% extends super.css %}
+
+{% block css-styles %}
+.info {
+  margin: auto;
+  margin-top: 20px;
+}
+{% endblock %}
