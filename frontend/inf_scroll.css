@@ -1,0 +1,29 @@
+@keyframes hide-post {
+  0%   {
+    opacity: 1;
+    height: 100px;
+  }
+  50%  {
+    opacity: 0;
+    height: 100px;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+.post {
+  height: 100px;
+  margin: 5px;
+  background-color: #505050;
+  padding: 10px;
+  animation-name: hide-post;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+.line {
+  border-color: white;
+}
