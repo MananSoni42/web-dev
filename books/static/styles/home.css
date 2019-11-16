@@ -1,0 +1,4 @@
+{% extends super.css %}
+
+{% block css-styles %}
+{% endblock %}

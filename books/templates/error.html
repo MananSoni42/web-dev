@@ -1,0 +1,24 @@
+{% extends "super.html" %}
+
+{% block nav_bar %}
+<ul class="navbar-nav mr-auto">
+</ul>
+<a href="{{url_for(callback)}}" class="mx-1">
+  <button class="btn btn-outline-light my-2 my-sm-0" type="button">back</button>
+</a>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center text-light">
+    <div class="col-6">
+      <span class="display-2">ERROR!</span>
+    </div>
+  </div>
+  <div class="row justify-content-center text-secondary">
+    <div class="col-6">
+      {{message}}
+    </div>
+  </div>
+</div>
+{% endblock %}

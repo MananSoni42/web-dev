@@ -1,0 +1,43 @@
+{% extends "super.html" %}
+
+{% block style %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+{% endblock %}
+
+{% block nav_bar %}
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item active">
+    <a class="nav-link" href="{{url_for('home')}}">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('my_books')}}">My Books</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('profile')}}">My profile</a>
+  </li>
+</ul>
+<form class="form-inline my-2 my-lg-0" action="{{url_for('search')}}" method="get">
+  <input class="form-control mr-sm-2" type="search" name="title" placeholder="Find books here" aria-label="Search">
+  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+</form>
+<form class="form-inline mx-2">
+  <button class="btn btn-light my-2 my-sm-0" type="button"><a href="{{url_for('log_out')}}">Log out</a></button>
+</form>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    {% for book in books %}
+    <div class="col-2 m-3 mt-5 mb-2">
+      <a class="black-text" href="{{url_for('book',isbn=book['isbn'])}}"
+        data-size="1600x1067">
+        <img alt="book-cover" src="{{book['img']}}"
+          class="img-fluid img-thumbnail">
+        <h4 class="text-center text-light my-1">{{book["title"]}}</h4><small class="text-center text-secondary my-1"> - {{book["author"]}}</small>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

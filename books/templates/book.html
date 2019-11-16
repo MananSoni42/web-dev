@@ -1,0 +1,81 @@
+{% extends "super.html" %}
+
+{% block style %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/book.css') }}">
+{% endblock %}
+
+{% block nav_bar %}
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item active">
+    <a class="nav-link" href="{{url_for('home')}}">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('my_books')}}">My Books</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('profile')}}">My profile</a>
+  </li>
+</ul>
+<form class="form-inline my-2 my-lg-0" action="{{url_for('search')}}" method="get">
+  <input class="form-control mr-sm-2" type="search" name="title" placeholder="Find books here" aria-label="Search">
+  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+</form>
+<form class="form-inline mx-2">
+  <button class="btn btn-light my-2 my-sm-0" type="button"><a href="{{url_for('log_out')}}">Log out</a></button>
+</form>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-3">
+      <img src="{{book['img_url']}}" alt="book cover" class="img-fluid img-thumbnail cover">
+    </div>
+    <div class="col-7">
+      <table class="table table-dark table-borderless text-light">
+        <thead>
+          <tr>
+            <th scope="col">{{book["title"]}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr my-0>
+            <td><small class="text-secondary">
+              {{book["author"]}} <br>
+              ISBN: {{book["isbn"]}} <br>
+              Published in {{book["year"]}}
+                </small>
+            </td>
+          </tr>
+          <tr>
+            <td>{{book["summary"]}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-2 text-light">
+      <form class="form-inline mx-2">
+        <button class="btn btn-light my-2 my-sm-0" type="button"><a href="{{url_for('add_book', isbn=book['isbn'])}}">Add book</a></button>
+      </form>
+    </div>
+  </div>
+  <div class="row m-0 mt-5">
+    <div class="col-12">
+      <ul class="nav nav-tabs">
+        <li class="nav-item  mr-2">
+          <a class="nav-link active" href="#summary">Summary</a>
+        </li>
+        <li class="nav-item ml-2">
+          <a class="nav-link text-light" href="{{url_for('book', isbn=book['isbn'], review=True)}}">Reviews</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row mt-0 text-light" id="summary">
+    <div class="col-12">
+      <span class="display-4">Summary</span><br>
+        {{book["description"]}}
+    </div>
+  </div>
+</div>
+{% endblock %}

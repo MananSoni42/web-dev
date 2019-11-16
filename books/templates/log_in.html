@@ -1,0 +1,33 @@
+{% extends "super.html" %}
+
+{% block style %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/log_in.css') }}">
+{% endblock %}
+
+{% block nav_bar %}
+<ul class="navbar-nav mr-auto">
+</ul>
+<a href="{{url_for('index')}}" class="mx-1">
+  <button class="btn btn-outline-light my-2 my-sm-0" type="button">back</button>
+</a>
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-3 login h3 text-light col-centered">
+      <form action="{{url_for('log_in')}}" method="post">        
+        <div class="form-group text-center">
+          <label for="uname">Username</label>
+          <input type="text" class="form-control" id="uname" name="uname" aria-describedby="emailHelp" placeholder="Enter Username">
+        </div>
+        <div class="form-group text-center col-centered">
+          <label for="pass">Password</label>
+          <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Log in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

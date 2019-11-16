@@ -1,0 +1,29 @@
+{% extends "super.html" %}
+
+{% block style %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+{% endblock %}
+
+{% block nav_bar %}
+<ul class="navbar-nav mr-auto">
+</ul>
+<a href="{{url_for('sign_up')}}" class="mx-1">
+  <button class="btn btn-outline-light my-2 my-sm-0" type="button">Sign up</button>
+</a>
+<a href="{{url_for('log_in')}}" class="mx-1">
+  <button class="btn btn-light my-2 my-sm-0" type="button">Log in</button>
+</a>
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-10 info h3 text-light">
+      <span class="display-4">A Personal Library, at your fingertips</span>
+      <ul class=".list-group-flush">
+      <li class=".list-group-item"> Find any Book from all over the world!
+      <li class=".list-group-item"> Rate books that you have read
+      <li class=".list-group-item"> and much more ...
+     </ul>
+    </div>
+  </div>
+{% endblock %}

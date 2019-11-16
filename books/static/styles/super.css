@@ -1,0 +1,13 @@
+.top-bar {
+  height: 60px;
+}
+.name {
+  margin: auto;
+}
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+{% block css-styles %}
+{% endblock %}
