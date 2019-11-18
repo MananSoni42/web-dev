@@ -1,0 +1,82 @@
+html {
+  background-color: #1B1B1B;
+}
+
+#outer {
+  fill: black;
+  stroke: #CCFF00;
+  stroke-width: .1;
+  stroke-linecap: round;
+}
+
+#pin {
+  fill: #CCFF00;
+}
+
+#minute-hand {
+  stroke-width: .05;
+  stroke: red;
+  transform-origin: center;
+}
+
+#hour-hand {
+  stroke: #02A4D3;
+  stroke-width: .07;
+  transform-origin: center;
+}
+
+#second-hand {
+  fill: #2E2D88;
+  transform-origin: center;
+}
+
+.marks {
+  stroke-width: .05;
+  stroke: #CCFF00;
+  transform-origin: center;
+}
+
+#mark-1 {
+  transform-origin: center;
+  transform: rotate(30deg);
+}
+#mark-2 {
+  transform-origin: center;
+  transform: rotate(60deg);
+}
+#mark-3 {
+  transform-origin: center;
+  transform: rotate(90deg);
+}
+#mark-4 {
+  transform-origin: center;
+  transform: rotate(120deg);
+}
+#mark-5 {
+  transform-origin: center;
+  transform: rotate(150deg);
+}
+#mark-6 {
+  transform-origin: center;
+  transform: rotate(180deg);
+}
+#mark-7 {
+  transform-origin: center;
+  transform: rotate(210deg);
+}
+#mark-8 {
+  transform-origin: center;
+  transform: rotate(240deg);
+}
+#mark-9 {
+  transform-origin: center;
+  transform: rotate(270deg);
+}
+#mark-10 {
+  transform-origin: center;
+  transform: rotate(300deg);
+}
+#mark-11 {
+  transform-origin: center;
+  transform: rotate(330deg);
+}
