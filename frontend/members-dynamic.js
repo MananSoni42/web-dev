@@ -48,7 +48,7 @@ function button_clicked(event) {
       return;
     }
     let name = document.getElementById("member_name").value;
-    let details = document.getElementById("member_name").value;
+    let details = document.getElementById("details").value;
     members.push([name,details])
     add_member(members.length,name,details)
     elem.parentElement.style.opacity = 0;
