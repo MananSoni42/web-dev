@@ -1,0 +1,98 @@
+@keyframes delete {
+  0%   {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+html {
+  background-color: #148cc4;
+}
+
+#members {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.member {
+  background-color: #383838;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  height: 80%;
+  animation-name: delete;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+.remove-button {
+  width: 10%;
+  padding: 10px;
+  float: right;
+  opacity: 0;
+  background-color: red;
+  border: 0px;
+}
+
+.remove-button:hover {
+  color: white;
+}
+
+.remove-button:active {
+  color: white;
+  font-weight: bold;
+  border: 0px;
+}
+
+.standard-button {
+  background-color: #753bb8;
+  border-color: black;
+  border-radius: 5px;
+  color: white;
+  width: 15%;
+  padding: 10px;
+  margin: 20px;
+  font-size: 120%;
+}
+
+.standard-button:active {
+  background-color: #492375;
+  color: gray;
+}
+
+.standard-button:hover {
+  background-color: #492375;
+}
+
+.form-button {
+  width: 15%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: dodgerblue;
+  border-color: dodgerblue;
+}
+
+.form-button:active {
+  background-color: royalblue;
+}
+.new-member-form {
+  opacity: 0.5;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  width: 40%;
+  border: solid black 2px;
+}
+
+.new-member-form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+}
