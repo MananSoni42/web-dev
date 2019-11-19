@@ -86,7 +86,6 @@ def home():
     count = 0
     for book in book_list:
         count += 1
-        print(count,len(book_list))
         if count > MAX_BOOK_HOME:
             break
         if not book.img_url:
@@ -139,7 +138,6 @@ def profile():
     "books_num": len(user.books),
     "books_perc": 100*len(user.books)/MAX_BOOKS_READ
     }
-    print(user_info)
     return render_template("profile.html",user=user_info)
 
 @app.route("/book/<string:isbn>", methods=['GET'])
@@ -154,10 +152,8 @@ def book(isbn):
             review = False
 
         if book_db.img_url:
-            print(1)
             book_url = book_db.img_url
         else:
-            print(2)
             book_url = get_image_url(str(isbn))
         summ, descr = get_book_info(str(isbn))
         descr = Markup(descr)
@@ -215,7 +211,6 @@ def add_book():
         return render_template("error.html", message='Not logged in', callback='index')
     try:
         isbn = request.args.get("isbn")
-        print(session["user"])
         user = User.query.get(session["user"][0])
         user.add_book_user(isbn)
         db.session.commit()

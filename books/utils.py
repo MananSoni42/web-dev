@@ -13,7 +13,6 @@ def search_from(lst,name,max_results=10):
 
 def generate_star_rating(rating):
     rating = round(rating * 2) / 2
-    print(rating)
     star_html = ''
     count = 0
     while rating > 0:
