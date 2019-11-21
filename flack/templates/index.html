@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{url_for('static', filename='stylesheet/index.css')}}">
+  <title>Flack</title>
+
+  {% raw %}
+  <script id="message-left" type="text/x-handlebars-template">
+  <div class="row my-3 mx-1 justify-content-start text-left">
+    <div class="col-4 message bg-primary text-light rounded-lg p-2">
+      <div class="row">
+        <div class="col-12 text-dark text-center">
+          {{name}}
+        </div>
+      </div>
+      <hr class="">
+      <div class="row">
+        <div class="col-12">
+          {{message}}
+        </div>
+      </div>
+    </div>
+  </div>
+  </script>
+  {% endraw %}
+  {% raw %}
+  <script id="message-right" type="text/x-handlebars-template">
+  <div class="row my-3 mx-1 justify-content-end text-right">
+    <div class="col-4 message bg-info text-light rounded-lg p-2">
+      <div class="row">
+        <div class="col-12 text-dark text-center">
+          {{name}}
+        </div>
+      </div>
+      <hr class="">
+      <div class="row">
+        <div class="col-12">
+          {{message}}
+        </div>
+      </div>
+    </div>
+  </div>
+  </script>
+  {% endraw %}
+
+</head>
+<body>
+  <div class="container h-100">
+    <div class="overlay">
+      <div class="row mt-5 text-success text-center">
+        <div class="col-3"></div>
+        <div class="col-6 bg-light display-4">
+          Welcome to Flack!
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row text-primary text-center">
+        <div class="col-3"></div>
+        <div class="col-6 bg-light">
+            <div class="form-group">
+              <label for="disp_name">Please enter your name to continue:</label>
+              <input type="text" class="form-control" id="disp_name" name="disp_name" placeholder="What would you like to be known by?">
+              <small id="disclaimer" class="form-text text-muted">This name is stored on your browser's local storage and it can't be changed later.</small>
+            </div>
+            <button type="submit" id="overlay_submit" class="btn btn-primary m-3">Submit</button>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+    <div class="row top_bar bg-success text-center">
+      <div class="col-3">
+        <img src="{{url_for('static', filename='img/logo.png')}}" alt="logo" class="logo my-1">
+      </div>
+      <div class="col-9 logo_text my-auto">
+        Flack
+      </div>
+    </div>
+    <div class="row h-100">
+      <div class="col-12 bg-secondary" id="channel_list">
+        <div class="row m-2">
+          <div class="col-1 my-auto">
+            <button class="btn btn-success" id="channel_button">+</button>
+          </div>
+          <div class="col-10 my-auto text-light text-left">
+            Add a new channel
+          </div>
+        </div>
+        <div class="row m-2 mb-5 channel_form rounded-lg">
+          <div class="col-12 p-3 bg-light">
+            <div class="form-group">
+              <input type="text" class="form-control" id="channel_name" name="disp_name" placeholder="Channel name">
+            </div>
+            <button type="submit" id="channel_create" class="btn btn-success">Create!</button>
+          </div>
+        </div>
+        <div class="row channel_info bg-light m-2 rounded-lg">
+          <div class="col-2 my-auto">
+            <div class="num_messages rounded-circle bg-success text-light text-center my-2">10</div>
+          </div>
+          <div class="col-4 my-auto">Name</div>
+          <div class="col-5 my-auto">last message</div>
+          <div class="col-1 my-auto">
+            <button class="btn chat_button border border-success">></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 bg-secondary" id="channel_list_small">
+        <div class="row channel_info bg-light m-2 rounded-lg">
+          <div class="col-12 my-auto">Name</div>
+        </div>
+      </div>
+      <div class="col-8 bg-light" id="chat_list">
+        <div class="row">
+          <button class="btn btn-success border border-dark mx-1" id="back_button"><</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{{url_for('static', filename='script/index.js')}}"></script>
+</body>
+</html>
