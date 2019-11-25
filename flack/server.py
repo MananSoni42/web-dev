@@ -49,4 +49,4 @@ def get_messages():
     return {'messages': messages[channel]}
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5000)
+    app.run(debug=True, host='172.17.69.34', port=5000)

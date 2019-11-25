@@ -28,9 +28,9 @@
       <div class="col-2 my-auto">
         <div class="num_messages rounded-circle bg-success text-light text-center my-2" id="num_messages">{{num_messages}}</div>
       </div>
-      <div class="col-4 my-auto">{{name}}</div>
+      <div class="col-3 my-auto">{{name}}</div>
       <div class="col-5 my-auto"></div>
-      <div class="col-1 my-auto">
+      <div class="col-2 my-auto">
         <button class="btn border border-success" id="chat_button">></button>
       </div>
     </div>
@@ -81,23 +81,23 @@
     <div class="container h-100">
       <div class="overlay">
         <div class="row mt-5 text-success text-center">
-          <div class="col-3"></div>
-          <div class="col-6 bg-light display-4">
+          <div class="col-2"></div>
+          <div class="col-8 bg-light display-4" id="welcome_text">
             Welcome to Flack!
           </div>
-          <div class="col-3"></div>
+          <div class="col-2"></div>
         </div>
         <div class="row text-primary text-center">
-          <div class="col-3"></div>
-          <div class="col-6 bg-light">
+          <div class="col-2"></div>
+          <div class="col-8 bg-light">
               <div class="form-group">
                 <label for="disp_name">Please enter your name to continue:</label>
-                <input type="text" class="form-control" id="disp_name" name="disp_name" placeholder="What would you like to be known by?">
+                <input type="text" class="form-control" id="disp_name" name="disp_name" placeholder="Your display name">
                 <small id="disclaimer" class="form-text text-muted">This name is stored on your browser's local storage and it can't be changed later.</small>
               </div>
               <button type="submit" id="overlay_submit" class="btn btn-primary m-3">Submit</button>
           </div>
-          <div class="col-3"></div>
+          <div class="col-2"></div>
         </div>
       </div>
       <div class="row bg-success text-center" id="top_bar">
@@ -112,10 +112,10 @@
       <div class="row h-100">
         <div class="col-12 bg-secondary" id="channel_page">
           <div class="row m-2">
-            <div class="col-1 my-auto">
+            <div class="col-2 my-auto">
               <button class="btn btn-success" id="channel_button">+</button>
             </div>
-            <div class="col-10 my-auto text-light text-left">
+            <div class="col-9 my-auto text-light text-left">
               Add a new channel
             </div>
           </div>

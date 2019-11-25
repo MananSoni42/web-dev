@@ -135,12 +135,13 @@ socket.on('getChannels', data => {
 socket.on('newMessage', data => {
   let message = data.message;
   let channels = data.channels;
-  console.log(channels)
-  if (message[0] === get('name')) {
-    document.getElementById('chat_list').innerHTML += template_message_left({'name': message[0], 'message': message[1]});
-  }
-  else {
-    document.getElementById('chat_list').innerHTML += template_message_right({'name': message[0], 'message': message[1]});
+  if (message[2] === get('current_channel')) {
+    if (message[0] === get('name')) {
+      document.getElementById('chat_list').innerHTML += template_message_left({'name': message[0], 'message': message[1]});
+    }
+    else {
+      document.getElementById('chat_list').innerHTML += template_message_right({'name': message[0], 'message': message[1]});
+    }
   }
   clear_channel_list();
   disp_channel_list(channels);
