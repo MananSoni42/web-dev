@@ -7,6 +7,44 @@
   }
 }
 
+@keyframes hide_top_bar {
+  0%   {
+    opacity: 1;
+    height: 10%;
+  }
+  50% {
+    opacity: 0.1;
+    height: 10%
+  }
+  75% {
+    opacity: 0;
+    height: 5%;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+@keyframes add_top_bar {
+  0%   {
+    opacity: 0;
+    height: 0px;
+  }
+  25% {
+    opacity: 0;
+    height: 5%
+  }
+  50% {
+    opacity: 0.1;
+    height: 10%;
+  }
+  100% {
+    opacity: 1;
+    height: 10%;
+  }
+}
+
 @keyframes add {
   0%   {
     opacity: 0;
@@ -35,6 +73,15 @@ html, body {
   height: 110% !important;
   z-index: 10;
   background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+#top_bar {
+  animation-name: hide_top_bar;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  height: 10%;
+  display: flex;
 }
 
 .logo {
@@ -70,17 +117,25 @@ html, body {
     overflow-y: auto;
 }
 
-#channel_list {
+#channel_page {
 }
 
 #channel_list_small {
   display: none;
 }
 
-#chat_list {
+#chat_page {
+  height: 100% !important;
+  overflow-y: auto;
   display: none;
 }
 
+.keyboard {
+    position: fixed;
+    bottom: 0;
+    left: 45%;
+    width: 30%;
+}
 @media only screen and (max-width: 900px) {
   .logo {
     max-width: 50%;
