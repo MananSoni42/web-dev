@@ -1,0 +1,147 @@
+@keyframes hide {
+  0%   {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hide_top_bar {
+  0%   {
+    opacity: 1;
+    height: 10%;
+  }
+  50% {
+    opacity: 0.1;
+    height: 10%
+  }
+  75% {
+    opacity: 0;
+    height: 5%;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+@keyframes add_top_bar {
+  0%   {
+    opacity: 0;
+    height: 0px;
+  }
+  25% {
+    opacity: 0;
+    height: 5%
+  }
+  50% {
+    opacity: 0.1;
+    height: 10%;
+  }
+  100% {
+    opacity: 1;
+    height: 10%;
+  }
+}
+
+@keyframes add {
+  0%   {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html, body {
+  background-color: black;
+  height: 100%;
+}
+
+.overlay{
+  animation-name: hide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 110% !important;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+#top_bar {
+  animation-name: hide_top_bar;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  height: 10%;
+  display: flex;
+}
+
+.logo {
+  max-width: 25%;
+  height: auto;
+  float: left;
+}
+
+.logo_text {
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 0.1em;
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+}
+
+.num_messages {
+  width: 20%;
+}
+
+.chat_button {
+  background-color: rgba(0,0,0,0);
+  color: green;
+  float: right;
+}
+
+.channel_form {
+  display: none;
+}
+
+.scrollable {
+    height: 100px; /* or any value */
+    overflow-y: auto;
+}
+
+#channel_page {
+}
+
+#channel_list_small {
+  display: none;
+}
+
+#chat_page {
+  height: 100% !important;
+  overflow-y: auto;
+  display: none;
+}
+
+.keyboard {
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    width: 50%;
+}
+@media only screen and (max-width: 900px) {
+  .logo {
+    max-width: 100%;
+  }
+
+  .num_messages {
+    width: 50%;
+  }
+}
