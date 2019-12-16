@@ -18,8 +18,15 @@ A dynamic website created using Flask, HTML and CSS (along with Bootstrap) where
 ## Flights
 A sample flights website, where you can book flights and see details about all the flights. Built using HTML, CSS, Flask and Postgre SQL. For more details, visit [flights](https://github.com/MananSoni42/web-dev/tree/master/sql-orm).
 
-## Project 1 - Books
+## CS50 projects
+### Project 1 - Books
 This project was done as a part of the CS50 course. The original instructions can be found [here](https://docs.cs50.net/ocw/web/projects/1/project1.html). View the full project at  [books](https://github.com/MananSoni42/web-dev/tree/master/books).
+
+### Project 2 - Flack
+This project was done as a part of the CS50 course. The original instructions can be found [here](https://docs.cs50.net/web/2018/x/projects/2/project2.html). View the full project at  [books](https://github.com/MananSoni42/web-dev/tree/master/flack).
+
+### Project 3 - Pizza
+This project was done as a part of the CS50 course. The original instructions can be found [here](https://docs.cs50.net/ocw/web/projects/3/project3.html). View the full project at  [books](https://github.com/MananSoni42/web-dev/tree/master/pizza).
 
 ## License
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) License
