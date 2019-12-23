@@ -8,7 +8,7 @@ A sample flights website, where you can book flights and see details about all t
 	apt-get install python-psycopg2 libpq-dev
 	pip3 install psycopg2
 	```
-* Configure your Database URIs and change these in your server.
+* Configure your Database URIs and change these in your server:
 	```
 	server_sql:
 	engine = create_engine('postgresql://<role>:<password>@localhost/<database>')
