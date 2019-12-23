@@ -15,4 +15,7 @@ Welcome to Manan's book repository. This is my submission for CS50's project 1 -
 * PostgreSQL (SQLAlchemy)
 
 ## Screenshots
-
+<img src="/assets/books/index.png" alt="img" width=270px> <img src="/assets/books/signup.png" alt="img" width=270px>  
+<img src="/assets/books/home.png" alt="img" width=270px> <img src="/assets/books/search1.png" alt="img" width=270px> <img src="/assets/books/search2.png" alt="img" width=270px>  
+<img src="/assets/books/summary.png" alt="img" width=270px> <img src="/assets/books/rating.png" alt="img" width=270px>  
+<img src="/assets/books/mybooks.png" alt="img" width=270px> <img src="/assets/books/profile.png" alt="img" width=270px>  
