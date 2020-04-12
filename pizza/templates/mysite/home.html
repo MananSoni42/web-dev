@@ -1,0 +1,100 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block header%}
+{% verbatim %}
+<script id="item_disp" type="text/x-handlebars-template">
+  <div class="col-2 bg-transparent m-2">
+    <div class="row">
+      <div class="col-12 align-center">
+        <img class="img-fluid mx-auto" src="{{im_path}}" alt="{{im}}-icon">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-light">
+        <h3>{{name}}</h3>
+      </div>
+    </div>
+    <div class="row mt-1">
+      <div class="col-12 mx-1">
+          <input class="btn btn-light text-danger" type="submit" value="Add to cart">
+      </div>
+    </div>
+  </div>
+</script>
+{% endverbatim %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'mysite/home.css' %}">
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="{% static 'mysite/home.js' %}"></script>
+{% endblock %}
+
+{% block beforecont %}
+<div class="container h-100">
+  <div id="overlay">
+    <div class="row mt-5 text-danger text-center">
+      <div class="col-2"></div>
+      <div class="col-8 bg-light display-4" id="welcome_text">
+        Welcome to Pinocchio's!
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <div class="row text-primary text-center">
+      <div class="col-2"></div>
+      <div class="col-8 bg-light">
+          <div class="form-group">
+            <label for="disp_name" class="text-dark">Please enter your name to continue:</label>
+            <input type="text" class="form-control" id="disp_name" name="disp_name" placeholder="Your name">
+            <small id="disclaimer" class="form-text text-muted">This name is stored on your browser's local storage and it can't be changed later.</small>
+          </div>
+          <button type="submit" id="overlay_submit" class="btn btn-danger m-3">Submit</button>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-light">
+  <a class="navbar-brand" href="#">
+    <img class="img-fluid" src="{% static 'mysite/img/logo.gif' %}" alt="" width="25">
+    <span>Pinocchio's</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link options home-btn itemname-pizza" data-name="pizza" href="#">Pizza</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link options home-btn itemname-sub" data-name="sub" href="#">Subs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link options home-btn itemname-pasta" data-name="pasta" href="#">Pasta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link options home-btn itemname-salad" data-name="salad" href="#">Salads</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link options home-btn itemname-platter" data-name="platter" href="#">Platters</a>
+      </li>
+    </ul>
+    <form class="form-inline my-lg-0">
+      <label class="mx-2 text-white" for="cart_num">Cart</label>
+      <div class="rounded-lg bg-light col-2 text-center text-danger" id="cart_num">0</div>
+    </form>
+  </div>
+</nav>
+<div class="row">
+  <div class="col-3 bg-white">
+    <form action="">
+
+    </form>
+  </div>
+</div>
+
+<div class="row m-2" id="item_display">
+</div>
+{% endblock %}
