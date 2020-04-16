@@ -1,0 +1,63 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block header%}
+<link rel="stylesheet" type="text/css" href="{% static 'mysite/cart.css' %}">
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="{% static 'mysite/cart.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="row mt-3">
+  <div class="col-2">
+    <form action="/">
+      <button class="btn btn-light text-danger" type="submit">back</button>
+    </form>
+  </div>
+  <div class="col-8"></div>
+  <div class="col-2 text-light">
+    Hello, Manan
+  </div>
+</div>
+<div class="row text-center text-warning">
+  <div class="col-12 display-4">
+    Details for order #3
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <table class="table table-hover table-bordered text-light">
+      <thead>
+        <tr>
+          <th scope="col">Order</th>
+          <th scope="col">time</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="font-weight-bold text-center">Total</td>
+          <td>52.45</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-2"></div>
+</div>
+<div class="row mt-5">
+  <div class="col-12 text-center">
+    <button class="btn btn-light text-danger">Place order</button>
+  </div>
+</div>
+{% endblock %}

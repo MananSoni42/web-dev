@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block header%}
+
 {% verbatim %}
 <script id="item_disp" type="text/x-handlebars-template">
   <div class="col-2 bg-transparent m-2">
@@ -17,7 +18,159 @@
     </div>
     <div class="row mt-1">
       <div class="col-12 mx-1">
-          <input class="btn btn-light text-danger" type="submit" value="Add to cart">
+          <a href="#" class="add_btn" id="{{name}}-btn"onclick="add_cart('{{name}}', '{{type}}')">
+            <input class="btn btn-light text-danger" type="button" value="Add to cart">
+          </a>
+      </div>
+    </div>
+  </div>
+</script>
+{% endverbatim %}
+
+{% verbatim %}
+<script id="item_popup" type="text/x-handlebars-template">
+  <div class="container h-100">
+    <div id="cart_popup" class="overlay cart_overlay">
+      <div class="row mt-5 text-danger text-center">
+        <div class="col-2"></div>
+        <div class="col-8 bg-light">
+          <div class="row">
+            <div class="col-11"></div>
+            <div class="col-1">
+              <button class="btn btn-light close_btn text-danger" onclick="popup_close()">X</button>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-12 display-4" id="welcome_text">
+              Selected: {{name}}
+            </div>
+          </div>
+          <div class="form">
+            <div class="row mb-5">
+              <div class="col-12 text-center">
+                <label for="size-form" class="mx-3">Size</label>
+                <div class="btn-group btn-group-toggle" id="size-form" data-toggle="buttons">
+                  <label class="btn btn-warning">
+                    <input type="radio" name="size" id="small"> Small
+                  </label>
+                  <label class="btn btn-warning active">
+                    <input type="radio" name="size" id="large" checked> Large
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-5 mb-5">Make your {{type}}!</button>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+  </div>
+</script>
+{% endverbatim %}
+
+{% verbatim %}
+<script id="item_popup_pizza" type="text/x-handlebars-template">
+  <div class="container h-100">
+    <div id="cart_popup" class="overlay cart_overlay">
+      <div class="row mt-5 text-danger text-center">
+        <div class="col-2"></div>
+        <div class="col-8 bg-light">
+          <div class="row">
+            <div class="col-11"></div>
+            <div class="col-1">
+              <button class="btn btn-light close_btn text-danger" onclick="popup_close()">X</button>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-12 display-4" id="welcome_text">
+              Selected: {{name}}
+            </div>
+          </div>
+          <div class="form">
+            <div class="row">
+              <div class="col-5 text-center">
+                <label for="size-form" class="mx-3">Size</label>
+                <div class="btn-group btn-group-toggle" id="size-form" data-toggle="buttons">
+                  <label class="btn btn-warning">
+                    <input type="radio" name="size" id="small"> Small
+                  </label>
+                  <label class="btn btn-warning active">
+                    <input type="radio" name="size" id="large" checked> Large
+                  </label>
+                </div>
+              </div>
+              <div class="col-5 text-center">
+                <label for="size-form" class="mx-3">Type</label>
+                <div class="btn-group btn-group-toggle" id="size-type" data-toggle="buttons">
+                  <label class="btn btn-warning">
+                    <input type="radio" name="type" id="regular"> Regular
+                  </label>
+                  <label class="btn btn-warning active">
+                    <input type="radio" name="type" id="sicilian" checked> Sicilian
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12 text-center">
+                <label for="topping-select">Anything extra?</label>
+                <select id="topping-select-{{name}}-{{type}}" class=" text-danger selectpicker show-tick" data-style="btn-warning" data-max-options="3">
+                </select>
+              </div>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-5 mb-5">Make your {{type}}!</button>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+  </div>
+</script>
+{% endverbatim %}
+
+{% verbatim %}
+<script id="item_popup_sub" type="text/x-handlebars-template">
+  <div class="container h-100">
+    <div id="cart_popup" class="overlay cart_overlay">
+      <div class="row mt-5 text-danger text-center">
+        <div class="col-2"></div>
+        <div class="col-8 bg-light">
+          <div class="row">
+            <div class="col-11"></div>
+            <div class="col-1">
+              <button class="btn btn-light close_btn text-danger" onclick="popup_close()">X</button>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-12 display-4" id="welcome_text">
+              Selected: {{name}}
+            </div>
+          </div>
+          <div class="form">
+            <div class="row">
+              <div class="col-6 text-center">
+                <label for="size-form" class="mx-3">Size</label>
+                <div class="btn-group btn-group-toggle" id="size-form" data-toggle="buttons">
+                  <label class="btn btn-warning">
+                    <input type="radio" name="size" id="small"> Small
+                  </label>
+                  <label class="btn btn-warning active">
+                    <input type="radio" name="size" id="large" checked> Large
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 text-center">
+                <label for="topping-select">Anything extra?</label>
+                <select id="topping-select-{{name}}-{{type}}" class=" text-danger selectpicker show-tick" data-style="btn-warning" data-max-options="3">
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-5 mb-5">Make your {{type}}!</button>
+          </div>
+        </div>
+        <div class="col-2"></div>
       </div>
     </div>
   </div>
@@ -26,12 +179,14 @@
 
 <link rel="stylesheet" type="text/css" href="{% static 'mysite/home.css' %}">
 <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 <script src="{% static 'mysite/home.js' %}"></script>
 {% endblock %}
 
 {% block beforecont %}
 <div class="container h-100">
-  <div id="overlay">
+  <div id="start_overlay" class="overlay">
     <div class="row mt-5 text-danger text-center">
       <div class="col-2"></div>
       <div class="col-8 bg-light display-4" id="welcome_text">
@@ -81,19 +236,16 @@
         <a class="nav-link options home-btn itemname-platter" data-name="platter" href="#">Platters</a>
       </li>
     </ul>
+    <a href="/cart">
     <form class="form-inline my-lg-0">
       <label class="mx-2 text-white" for="cart_num">Cart</label>
       <div class="rounded-lg bg-light col-2 text-center text-danger" id="cart_num">0</div>
     </form>
+    </a>
   </div>
 </nav>
-<div class="row">
-  <div class="col-3 bg-white">
-    <form action="">
 
-    </form>
-  </div>
-</div>
+<div id="popup"></div>
 
 <div class="row m-2" id="item_display">
 </div>

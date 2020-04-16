@@ -4,6 +4,7 @@ from django.contrib import admin
 from .models import *
 
 admin.site.register(Order)
+admin.site.register(FinalOrder)
 admin.site.register(Pasta)
 admin.site.register(Salad)
 admin.site.register(Platter)

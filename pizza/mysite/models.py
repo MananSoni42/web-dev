@@ -1,13 +1,28 @@
+import django
 from django.db import models
 
 # Create your models here.
 class Order(models.Model):
-    cust_id = models.IntegerField()
-    cust_name = models.CharField(max_length=30)
-    time = models.TimeField()
+    def __str__(self):
+        return f'order: time - {self.get_time()}'
 
-    def get_price(self,size):
+class FinalOrder(models.Model):
+    order_num = models.AutoField(primary_key=True)
+    cust_name = models.CharField(max_length=30)
+    finished = models.BooleanField(default=False)
+    orders = models.ManyToManyField(Order)
+
+    def get_time(self):
         pass
+
+    def get_price(self):
+        price = 0
+        for o in orders.objects.all():
+            price += o.get_price()
+        return price
+
+    def __str__(self):
+        return f'final order - {self.get_time()} - {self.get_price()}'
 
 class Pasta(models.Model):
     name = models.CharField(max_length=30)
@@ -17,13 +32,14 @@ class Pasta(models.Model):
         return f'{self.name} - {self.price}'
 
 class PastaOrder(Order):
+    time = models.TimeField()
     order = models.ForeignKey(Pasta, on_delete=models.CASCADE)
 
     def get_price(self):
-        pass
+        return self.order.price
 
     def __str__(self):
-        return f'order: {self.name} - {self.get_price()}'
+        return f'order: {self.get_price()}'
 
 class Salad(models.Model):
     name = models.CharField(max_length=30)
@@ -33,13 +49,14 @@ class Salad(models.Model):
         return f'{self.name} - {self.price}'
 
 class SaladOrder(Order):
+    time = models.TimeField()
     order = models.ForeignKey(Salad, on_delete=models.CASCADE)
 
     def get_price(self):
-        pass
+        return self.order.price
 
     def __str__(self):
-        return f'order: {self.name} - {self.get_price()}'
+        return f'order: {self.get_price()}'
 
 class Platter(models.Model):
     name = models.CharField(max_length=30)
@@ -50,14 +67,18 @@ class Platter(models.Model):
         return f'{self.name} - {self.small_price} | {self.large_price}'
 
 class PlatterOrder(Order):
+    time = models.TimeField()
     order = models.ForeignKey(Platter, on_delete=models.CASCADE)
     size_small = models.BooleanField(default=False)
 
     def get_price(self):
-        pass
+        if self.size_small:
+            return self.order.small_price
+        else:
+            return self.order.large_price
 
     def __str__(self):
-        return f'order: {self.name} - {self.get_price()}'
+        return f'order: {self.get_price()}'
 
 class SubExtra(models.Model):
     name = models.CharField(max_length=30)
@@ -76,15 +97,25 @@ class Sub(models.Model):
         return f'{self.name} - {self.small_price} | {self.large_price}'
 
 class SubOrder(Order):
+    time = models.TimeField()
     order = models.ForeignKey(Sub, on_delete=models.CASCADE)
     size_small = models.BooleanField(default=False)
     extra = models.ManyToManyField(SubExtra, blank=True)
 
-    def get_price(self,size):
-        pass
+    def get_price(self):
+        price = 0
+        if self.size_small:
+            price = self.order.small_price
+            for extra in self.extra.all():
+                price += extra.small_price
+        else:
+            price =  self.order.large_price
+            for extra in self.extra.all():
+                price += extra.large_price
+        return price
 
     def __str__(self):
-        return f'order: {self.name} - {self.get_price()}'
+        return f'order: {self.get_price()}'
 
 class PizzaTopping(models.Model):
     name = models.CharField(max_length=30)
@@ -96,6 +127,7 @@ class Pizza(models.Model):
     name = models.CharField(max_length=30)
     small_price = models.DecimalField(max_digits=10, decimal_places=2)
     large_price = models.DecimalField(max_digits=10, decimal_places=2)
+    num_toppings = models.IntegerField(default=0)
 
     def __str__(self):
         return f'{self.name} - {self.small_price} | {self.large_price}'
@@ -109,13 +141,22 @@ class SicilianPizza(Pizza):
         return f'sic: {self.name} - {self.small_price} | {self.large_price}'
 
 class PizzaOrder(Order):
+    time = models.TimeField()
     order = models.ForeignKey(Pizza, on_delete=models.CASCADE)
     size_small = models.BooleanField(default=False)
-    cheese = models.BooleanField()
     toppings = models.ManyToManyField(PizzaTopping)
 
-    def get_price(self,size):
-        pass
+    def get_price(self):
+        if self.size_small:
+            return self.order.small_price
+        else:
+            return self.order.large_price
+
+    def verify_num_toppings(self):
+        if self.order.num_toppings == len(self.toppings.all()):
+            return True
+        else:
+            return False
 
     def __str__(self):
-        return f'order: {self.name} - {self.get_price()}'
+        return f'order: {self.get_price()}'
