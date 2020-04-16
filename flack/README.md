@@ -13,8 +13,11 @@ Say hello to Flack, a messaging app that can be accessed from your phone as well
 * HTML, CSS (bootstrap), JavaScript (bootstrap, handlebars, AJAX)
 
 ## Screenshots
-<img src="/assets/flack/name1.png" alt="img" width=270px> <img src="/assets/flack/name2.png" alt="img" width=270px>  
-<img src="/assets/flack/newchannel1.png" alt="img" width=270px> <img src="/assets/flack/newchannel2.png" alt="img" width=270px>  
-<img src="/assets/flack/chat1.png" alt="img" width=270px> <img src="/assets/flack/chat2.png" alt="img" width=270px>  
-<img src="/assets/flack/messagecount.png" alt="img" width=270px>  
+<img src="/assets/flack/name1.png" alt="img" width=1000px> 
+<img src="/assets/flack/name2.png" alt="img" width=1000px>  
+<img src="/assets/flack/newchannel1.png" alt="img" width=1000px> 
+<img src="/assets/flack/newchannel2.png" alt="img" width=1000px>  
+<img src="/assets/flack/chat1.png" alt="img" width=1000px> 
+<img src="/assets/flack/chat2.png" alt="img" width=1000px>  
+<img src="/assets/flack/messagecount.png" alt="img" width=1000px>  
 
