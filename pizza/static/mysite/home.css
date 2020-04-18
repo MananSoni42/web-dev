@@ -25,6 +25,7 @@
   background-color:rgba(0, 0, 0, 0.85);
   z-index:9999;
   color:white;
+  display: none;
 }
 
 #cart_pizza {

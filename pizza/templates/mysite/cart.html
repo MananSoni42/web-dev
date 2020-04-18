@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block header%}
-<link rel="stylesheet" type="text/css" href="{% static 'mysite/cart.css' %}">
 <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 <script src="{% static 'mysite/cart.js' %}"></script>
 {% endblock %}
@@ -20,7 +19,7 @@
   </div>
 </div>
 <div class="row text-center text-warning">
-  <div class="col-12 display-4">
+  <div id = "title" class="col-12 display-4">
     Details for order #3
   </div>
 </div>
@@ -31,25 +30,10 @@
       <thead>
         <tr>
           <th scope="col">Order</th>
-          <th scope="col">time</th>
           <th scope="col">Amount</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <td colspan="2" class="font-weight-bold text-center">Total</td>
-          <td>52.45</td>
-        </tr>
+      <tbody id="order-table-body">
       </tbody>
     </table>
   </div>
@@ -57,7 +41,7 @@
 </div>
 <div class="row mt-5">
   <div class="col-12 text-center">
-    <button class="btn btn-light text-danger">Place order</button>
+    <button class="btn btn-light text-danger" onclick="close_order()">Place order</button>
   </div>
 </div>
 {% endblock %}

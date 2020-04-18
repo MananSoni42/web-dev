@@ -3,8 +3,20 @@ const template_popup = Handlebars.compile(document.getElementById("item_popup").
 const template_popup_sub = Handlebars.compile(document.getElementById("item_popup_sub").innerHTML);
 const template_popup_pizza = Handlebars.compile(document.getElementById("item_popup_pizza").innerHTML);
 
-var name = "-1"
-window.toppings = "-1"
+window.cust_name = sessionStorage.getItem("cust_name");
+console.log(window.cust_name)
+window.toppings = "-1";
+var num_toppings = {
+  '1 topping': 1,
+  '2 toppings': 2,
+  '3 toppings': 3,
+  'Cheese': 0,
+  'Special': 5,
+};
+
+function load_cart() {
+
+}
 
 function get_extra() {
   return $.ajax({
@@ -17,37 +29,41 @@ function popup_close() {
 }
 
 function add_cart(name,type) {
-
+  var id = (name[0]+name[1]+name.slice(-2)+name.slice(-1)).split(' ').join('_');
   if (!type.localeCompare('pizza')) {
     document.getElementById('popup').innerHTML = template_popup_pizza({
+      'cust_name': window.cust_name,
       'name': name,
+      'id': id,
       'type': type,
+      'num': num_toppings[name],
     });
 
-    select = $('#topping-select-'+name+'-'+type);
+    select = $('#topping-select-'+id+'-'+type);
 
     for (var i=0; i<window.toppings[type].length; i++){
-      select.append('<option name="'+window.toppings[type][i]+'">'+window.toppings[type][i]+'</option>');
+      select.append('<option name="'+window.toppings[type][i]+' value="'+window.toppings[type][i]+'">'+window.toppings[type][i]+'</option>');
     }
     select.selectpicker("refresh");
-
   }
   else if (!type.localeCompare('sub')) {
     document.getElementById('popup').innerHTML = template_popup_sub({
+      'cust_name': window.cust_name,
       'name': name,
+      'id': id,
       'type': type,
     });
 
-    select = $('#topping-select-'+name+'-'+type);
+    select = $('#topping-select-'+id+'-'+type);
 
     for (var i=0; i<window.toppings[type].length; i++){
-      select.append('<option name="'+window.toppings[type][i]+'">'+window.toppings[type][i]+'</option>');
+      select.append('<option name="'+window.toppings[type][i]+' value="'+window.toppings[type][i]+'">'+window.toppings[type][i]+'</option>');
     }
     select.selectpicker("refresh");
-
   }
   else {
     document.getElementById('popup').innerHTML = template_popup({
+      'cust_name': window.cust_name,
       'name': name,
       'type': type
     });
@@ -55,11 +71,12 @@ function add_cart(name,type) {
 }
 
 function get_name() {
-  if (name == "-1") {
+  if (! window.cust_name) {
     $('#start_overlay').show();
     $('#overlay_submit').on('click', function() {
-      name = document.getElementById("disp_name").value;
-      if (name) {
+      window.cust_name = document.getElementById("disp_name").value;
+      sessionStorage.setItem("cust_name",window.cust_name);
+      if (window.cust_name) {
         $('#start_overlay').hide();
       }
       else {
@@ -88,7 +105,7 @@ function enumerate_items(name,items) {
 }
 
 $(document).ready(function() {
-  $('#start_overlay').hide();
+  get_name();
 
   get_extra().then(function(response) {
     window.toppings = response;

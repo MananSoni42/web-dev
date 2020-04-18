@@ -45,22 +45,25 @@
               Selected: {{name}}
             </div>
           </div>
-          <div class="form">
+          <form action="/ajax/add_to_cart">
+            <input type='hidden' name='cust_name' value='{{cust_name}}' />
+            <input type='hidden' name='name' value='{{name}}' />
+            <input type='hidden' name='item_type' value='{{type}}' />
             <div class="row mb-5">
               <div class="col-12 text-center">
                 <label for="size-form" class="mx-3">Size</label>
                 <div class="btn-group btn-group-toggle" id="size-form" data-toggle="buttons">
                   <label class="btn btn-warning">
-                    <input type="radio" name="size" id="small"> Small
+                    <input type="radio" name="size" value="True"> Small
                   </label>
                   <label class="btn btn-warning active">
-                    <input type="radio" name="size" id="large" checked> Large
+                    <input type="radio" name="size" value="False" checked> Large
                   </label>
                 </div>
               </div>
             </div>
             <button type="submit" class="btn btn-primary mt-5 mb-5">Make your {{type}}!</button>
-          </div>
+          </form>
         </div>
         <div class="col-2"></div>
       </div>
@@ -87,41 +90,43 @@
               Selected: {{name}}
             </div>
           </div>
-          <div class="form">
+          <form action="/ajax/add_to_cart">
+            <input type='hidden' name='cust_name' value='{{cust_name}}' />
+            <input type='hidden' name='name' value='{{name}}' />
+            <input type='hidden' name='item_type' value='{{type}}' />
             <div class="row">
-              <div class="col-5 text-center">
+              <div class="col-6 text-center">
                 <label for="size-form" class="mx-3">Size</label>
                 <div class="btn-group btn-group-toggle" id="size-form" data-toggle="buttons">
                   <label class="btn btn-warning">
-                    <input type="radio" name="size" id="small"> Small
+                    <input type="radio" name="size" value="True"> Small
                   </label>
                   <label class="btn btn-warning active">
-                    <input type="radio" name="size" id="large" checked> Large
+                    <input type="radio" name="size" value="False" checked> Large
                   </label>
                 </div>
               </div>
-              <div class="col-5 text-center">
-                <label for="size-form" class="mx-3">Type</label>
+              <div class="col-6 text-center">
+                <label for="size-type" class="mx-3">Type</label>
                 <div class="btn-group btn-group-toggle" id="size-type" data-toggle="buttons">
                   <label class="btn btn-warning">
-                    <input type="radio" name="type" id="regular"> Regular
+                    <input type="radio" name="type" value="regular" checked> Regular
                   </label>
                   <label class="btn btn-warning active">
-                    <input type="radio" name="type" id="sicilian" checked> Sicilian
+                    <input type="radio" name="size" value="sicilian"> Sicilian
                   </label>
                 </div>
               </div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-4">
               <div class="col-12 text-center">
                 <label for="topping-select">Anything extra?</label>
-                <select id="topping-select-{{name}}-{{type}}" class=" text-danger selectpicker show-tick" data-style="btn-warning" data-max-options="3">
+                <select id="topping-select-{{id}}-{{type}}" class=" text-danger selectpicker show-tick" name="extra" data-style="btn-warning" data-max-options="{{num}}" multiple data-live-search="true">
                 </select>
               </div>
             </div>
-            </div>
             <button type="submit" class="btn btn-primary mt-5 mb-5">Make your {{type}}!</button>
-          </div>
+          </form>
         </div>
         <div class="col-2"></div>
       </div>
@@ -148,27 +153,30 @@
               Selected: {{name}}
             </div>
           </div>
-          <div class="form">
+          <form action="/ajax/add_to_cart">
+            <input type='hidden' name='cust_name' value='{{cust_name}}' />
+            <input type='hidden' name='name' value='{{name}}' />
+            <input type='hidden' name='item_type' value='{{type}}' />
             <div class="row">
               <div class="col-6 text-center">
                 <label for="size-form" class="mx-3">Size</label>
                 <div class="btn-group btn-group-toggle" id="size-form" data-toggle="buttons">
                   <label class="btn btn-warning">
-                    <input type="radio" name="size" id="small"> Small
+                    <input type="radio" name="size" value="True"> Small
                   </label>
                   <label class="btn btn-warning active">
-                    <input type="radio" name="size" id="large" checked> Large
+                    <input type="radio" name="size" value="False" checked> Large
                   </label>
                 </div>
               </div>
               <div class="col-6 text-center">
                 <label for="topping-select">Anything extra?</label>
-                <select id="topping-select-{{name}}-{{type}}" class=" text-danger selectpicker show-tick" data-style="btn-warning" data-max-options="3">
+                <select id="topping-select-{{id}}-{{type}}" class=" text-danger selectpicker show-tick" name="extra" data-style="btn-warning" data-max-options="4" multiple data-live-search="true">
                 </select>
               </div>
             </div>
             <button type="submit" class="btn btn-primary mt-5 mb-5">Make your {{type}}!</button>
-          </div>
+          </form>
         </div>
         <div class="col-2"></div>
       </div>
@@ -237,10 +245,7 @@
       </li>
     </ul>
     <a href="/cart">
-    <form class="form-inline my-lg-0">
-      <label class="mx-2 text-white" for="cart_num">Cart</label>
-      <div class="rounded-lg bg-light col-2 text-center text-danger" id="cart_num">0</div>
-    </form>
+      <button class="btn btn-light text-danger">Cart</button>
     </a>
   </div>
 </nav>
