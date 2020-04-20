@@ -1,0 +1,4025 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "mysite",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "mysite",
+    "model": "pasta"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "mysite",
+    "model": "pastaorder"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "mysite",
+    "model": "salad"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "mysite",
+    "model": "saladorder"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "mysite",
+    "model": "platter"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "mysite",
+    "model": "platterorder"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "mysite",
+    "model": "subextra"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "mysite",
+    "model": "sub"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "mysite",
+    "model": "suborder"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "mysite",
+    "model": "pizzatopping"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "mysite",
+    "model": "pizza"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "mysite",
+    "model": "regularpizza"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "mysite",
+    "model": "sicilianpizza"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 21,
+  "fields": {
+    "app_label": "mysite",
+    "model": "pizzaorder"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 22,
+  "fields": {
+    "app_label": "mysite",
+    "model": "finalorder"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "uldwuzxk3wo63ejfhqwfjyjp6wvm1bgu",
+  "fields": {
+    "session_data": "MDBhOTNmZWNhOWIyZDE1OTM4NGZmMTk3Nzg0NWRlNDQ5ZjRmOTcyYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIwYTNmZWRmYmI5MTNjOWU1N2FkNDFmZDc0YjQ4Y2RkYzA3ZmNlZDFhIn0=",
+    "expire_date": "2020-04-26T09:05:38.825Z"
+  }
+},
+{
+  "model": "mysite.order",
+  "pk": 12,
+  "fields": {
+    "polymorphic_ctype": 16
+  }
+},
+{
+  "model": "mysite.order",
+  "pk": 13,
+  "fields": {
+    "polymorphic_ctype": 11
+  }
+},
+{
+  "model": "mysite.order",
+  "pk": 14,
+  "fields": {
+    "polymorphic_ctype": 21
+  }
+},
+{
+  "model": "mysite.order",
+  "pk": 15,
+  "fields": {
+    "polymorphic_ctype": 16
+  }
+},
+{
+  "model": "mysite.order",
+  "pk": 16,
+  "fields": {
+    "polymorphic_ctype": 21
+  }
+},
+{
+  "model": "mysite.order",
+  "pk": 17,
+  "fields": {
+    "polymorphic_ctype": 9
+  }
+},
+{
+  "model": "mysite.order",
+  "pk": 18,
+  "fields": {
+    "polymorphic_ctype": 21
+  }
+},
+{
+  "model": "mysite.order",
+  "pk": 19,
+  "fields": {
+    "polymorphic_ctype": 13
+  }
+},
+{
+  "model": "mysite.finalorder",
+  "pk": 4,
+  "fields": {
+    "cust_name": "Manan",
+    "finished": true,
+    "orders": [
+      12,
+      15
+    ]
+  }
+},
+{
+  "model": "mysite.finalorder",
+  "pk": 6,
+  "fields": {
+    "cust_name": "Test",
+    "finished": true,
+    "orders": [
+      17,
+      18,
+      19
+    ]
+  }
+},
+{
+  "model": "mysite.pasta",
+  "pk": 1,
+  "fields": {
+    "name": "Baked Ziti w/Mozzarella",
+    "price": "6.50"
+  }
+},
+{
+  "model": "mysite.pasta",
+  "pk": 2,
+  "fields": {
+    "name": "Baked Ziti w/Meatballs",
+    "price": "8.75"
+  }
+},
+{
+  "model": "mysite.pasta",
+  "pk": 3,
+  "fields": {
+    "name": "Baked Ziti w/Chicken",
+    "price": "9.75"
+  }
+},
+{
+  "model": "mysite.pastaorder",
+  "pk": 17,
+  "fields": {
+    "time": "11:49:15.752",
+    "order": 2
+  }
+},
+{
+  "model": "mysite.salad",
+  "pk": 1,
+  "fields": {
+    "name": "Garden Salad",
+    "price": "6.25"
+  }
+},
+{
+  "model": "mysite.salad",
+  "pk": 2,
+  "fields": {
+    "name": "Greek Salad",
+    "price": "8.25"
+  }
+},
+{
+  "model": "mysite.salad",
+  "pk": 3,
+  "fields": {
+    "name": "Antipasto",
+    "price": "8.25"
+  }
+},
+{
+  "model": "mysite.salad",
+  "pk": 4,
+  "fields": {
+    "name": "Salad w/Tuna",
+    "price": "8.25"
+  }
+},
+{
+  "model": "mysite.saladorder",
+  "pk": 13,
+  "fields": {
+    "time": "10:26:57.684",
+    "order": 3
+  }
+},
+{
+  "model": "mysite.platter",
+  "pk": 1,
+  "fields": {
+    "name": "Garden Salad",
+    "small_price": "40.00",
+    "large_price": "65.00"
+  }
+},
+{
+  "model": "mysite.platter",
+  "pk": 2,
+  "fields": {
+    "name": "Greek Salad",
+    "small_price": "50.00",
+    "large_price": "75.00"
+  }
+},
+{
+  "model": "mysite.platter",
+  "pk": 3,
+  "fields": {
+    "name": "Antipasto",
+    "small_price": "50.00",
+    "large_price": "75.00"
+  }
+},
+{
+  "model": "mysite.platter",
+  "pk": 4,
+  "fields": {
+    "name": "Baked Ziti",
+    "small_price": "40.00",
+    "large_price": "65.00"
+  }
+},
+{
+  "model": "mysite.platter",
+  "pk": 5,
+  "fields": {
+    "name": "Meatball Parm",
+    "small_price": "50.00",
+    "large_price": "75.00"
+  }
+},
+{
+  "model": "mysite.platter",
+  "pk": 6,
+  "fields": {
+    "name": "Chicken Parm",
+    "small_price": "55.00",
+    "large_price": "85.00"
+  }
+},
+{
+  "model": "mysite.platterorder",
+  "pk": 19,
+  "fields": {
+    "time": "11:49:58.980",
+    "order": 1,
+    "size_small": false
+  }
+},
+{
+  "model": "mysite.subextra",
+  "pk": 1,
+  "fields": {
+    "name": "Mushrooms",
+    "small_price": "0.50",
+    "large_price": "0.50"
+  }
+},
+{
+  "model": "mysite.subextra",
+  "pk": 2,
+  "fields": {
+    "name": "Green Peppers",
+    "small_price": "0.50",
+    "large_price": "0.50"
+  }
+},
+{
+  "model": "mysite.subextra",
+  "pk": 3,
+  "fields": {
+    "name": "Onions",
+    "small_price": "0.50",
+    "large_price": "0.50"
+  }
+},
+{
+  "model": "mysite.subextra",
+  "pk": 4,
+  "fields": {
+    "name": "Cheese",
+    "small_price": "0.50",
+    "large_price": "0.50"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 1,
+  "fields": {
+    "name": "Cheese",
+    "small_price": "6.50",
+    "large_price": "7.95"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 2,
+  "fields": {
+    "name": "Italian",
+    "small_price": "6.50",
+    "large_price": "7.95"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 3,
+  "fields": {
+    "name": "Ham + Cheese",
+    "small_price": "6.50",
+    "large_price": "7.95"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 4,
+  "fields": {
+    "name": "Meatball",
+    "small_price": "6.50",
+    "large_price": "7.95"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 5,
+  "fields": {
+    "name": "Tuna",
+    "small_price": "6.50",
+    "large_price": "7.95"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 6,
+  "fields": {
+    "name": "Turkey",
+    "small_price": "7.50",
+    "large_price": "8.50"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 7,
+  "fields": {
+    "name": "Chicken Parmigiana",
+    "small_price": "7.50",
+    "large_price": "8.50"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 8,
+  "fields": {
+    "name": "Eggplant Parmigiana",
+    "small_price": "6.50",
+    "large_price": "7.95"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 9,
+  "fields": {
+    "name": "Steak",
+    "small_price": "6.50",
+    "large_price": "7.95"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 10,
+  "fields": {
+    "name": "Steak + Cheese",
+    "small_price": "6.95",
+    "large_price": "8.00"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 11,
+  "fields": {
+    "name": "Sausage, Peppers & Onions",
+    "small_price": null,
+    "large_price": "8.50"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 12,
+  "fields": {
+    "name": "Hamburger",
+    "small_price": "4.60",
+    "large_price": "6.95"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 13,
+  "fields": {
+    "name": "Cheeseburger",
+    "small_price": "5.10",
+    "large_price": "7.45"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 14,
+  "fields": {
+    "name": "Fried Chicken",
+    "small_price": "6.95",
+    "large_price": "8.50"
+  }
+},
+{
+  "model": "mysite.sub",
+  "pk": 15,
+  "fields": {
+    "name": "Veggie",
+    "small_price": "6.95",
+    "large_price": "8.50"
+  }
+},
+{
+  "model": "mysite.suborder",
+  "pk": 12,
+  "fields": {
+    "time": "10:26:50.747",
+    "order": 4,
+    "size_small": true,
+    "extra": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "mysite.suborder",
+  "pk": 15,
+  "fields": {
+    "time": "10:39:11.187",
+    "order": 15,
+    "size_small": false,
+    "extra": []
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 1,
+  "fields": {
+    "name": "Pepperoni"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 2,
+  "fields": {
+    "name": "Sausage"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 3,
+  "fields": {
+    "name": "Mushrooms"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 4,
+  "fields": {
+    "name": "Onion"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 5,
+  "fields": {
+    "name": "Ham"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 6,
+  "fields": {
+    "name": "Canadian Bacon"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 7,
+  "fields": {
+    "name": "Pineapple"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 8,
+  "fields": {
+    "name": "Eggplant"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 9,
+  "fields": {
+    "name": "Tomato & Basil"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 10,
+  "fields": {
+    "name": "Green Peppers"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 11,
+  "fields": {
+    "name": "Hamburger"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 12,
+  "fields": {
+    "name": "Spinach"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 13,
+  "fields": {
+    "name": "Artichoke"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 14,
+  "fields": {
+    "name": "Buffalo Chicken"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 15,
+  "fields": {
+    "name": "Barbecue Chicken"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 16,
+  "fields": {
+    "name": "Anchovies"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 17,
+  "fields": {
+    "name": "Black Olives"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 18,
+  "fields": {
+    "name": "Fresh Garlic"
+  }
+},
+{
+  "model": "mysite.pizzatopping",
+  "pk": 19,
+  "fields": {
+    "name": "Zucchini"
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 1,
+  "fields": {
+    "name": "Cheese",
+    "small_price": "12.70",
+    "large_price": "17.95",
+    "num_toppings": 0
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 2,
+  "fields": {
+    "name": "1 topping",
+    "small_price": "13.70",
+    "large_price": "17.95",
+    "num_toppings": 1
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 3,
+  "fields": {
+    "name": "2 toppings",
+    "small_price": "15.20",
+    "large_price": "21.95",
+    "num_toppings": 2
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 4,
+  "fields": {
+    "name": "3 toppings",
+    "small_price": "16.20",
+    "large_price": "23.95",
+    "num_toppings": 3
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 5,
+  "fields": {
+    "name": "Special",
+    "small_price": "17.75",
+    "large_price": "25.95",
+    "num_toppings": 5
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 6,
+  "fields": {
+    "name": "Cheese",
+    "small_price": "24.45",
+    "large_price": "38.70",
+    "num_toppings": 0
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 7,
+  "fields": {
+    "name": "1 topping",
+    "small_price": "26.45",
+    "large_price": "40.70",
+    "num_toppings": 1
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 8,
+  "fields": {
+    "name": "2 toppings",
+    "small_price": "28.45",
+    "large_price": "42.70",
+    "num_toppings": 2
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 9,
+  "fields": {
+    "name": "3 toppings",
+    "small_price": "29.45",
+    "large_price": "44.70",
+    "num_toppings": 3
+  }
+},
+{
+  "model": "mysite.pizza",
+  "pk": 10,
+  "fields": {
+    "name": "Special",
+    "small_price": "30.45",
+    "large_price": "40.70",
+    "num_toppings": 5
+  }
+},
+{
+  "model": "mysite.regularpizza",
+  "pk": 1,
+  "fields": {}
+},
+{
+  "model": "mysite.regularpizza",
+  "pk": 2,
+  "fields": {}
+},
+{
+  "model": "mysite.regularpizza",
+  "pk": 3,
+  "fields": {}
+},
+{
+  "model": "mysite.regularpizza",
+  "pk": 4,
+  "fields": {}
+},
+{
+  "model": "mysite.regularpizza",
+  "pk": 5,
+  "fields": {}
+},
+{
+  "model": "mysite.sicilianpizza",
+  "pk": 6,
+  "fields": {}
+},
+{
+  "model": "mysite.sicilianpizza",
+  "pk": 7,
+  "fields": {}
+},
+{
+  "model": "mysite.sicilianpizza",
+  "pk": 8,
+  "fields": {}
+},
+{
+  "model": "mysite.sicilianpizza",
+  "pk": 9,
+  "fields": {}
+},
+{
+  "model": "mysite.sicilianpizza",
+  "pk": 10,
+  "fields": {}
+},
+{
+  "model": "mysite.pizzaorder",
+  "pk": 14,
+  "fields": {
+    "time": "10:29:07.576",
+    "order": 2,
+    "size_small": false,
+    "toppings": [
+      2
+    ]
+  }
+},
+{
+  "model": "mysite.pizzaorder",
+  "pk": 16,
+  "fields": {
+    "time": "10:40:29.681",
+    "order": 1,
+    "size_small": false,
+    "toppings": []
+  }
+},
+{
+  "model": "mysite.pizzaorder",
+  "pk": 18,
+  "fields": {
+    "time": "11:49:40.308",
+    "order": 5,
+    "size_small": true,
+    "toppings": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add order",
+    "content_type": 7,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change order",
+    "content_type": 7,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete order",
+    "content_type": 7,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view order",
+    "content_type": 7,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add pasta",
+    "content_type": 8,
+    "codename": "add_pasta"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change pasta",
+    "content_type": 8,
+    "codename": "change_pasta"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete pasta",
+    "content_type": 8,
+    "codename": "delete_pasta"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view pasta",
+    "content_type": 8,
+    "codename": "view_pasta"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add pasta order",
+    "content_type": 9,
+    "codename": "add_pastaorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change pasta order",
+    "content_type": 9,
+    "codename": "change_pastaorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete pasta order",
+    "content_type": 9,
+    "codename": "delete_pastaorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view pasta order",
+    "content_type": 9,
+    "codename": "view_pastaorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add salad",
+    "content_type": 10,
+    "codename": "add_salad"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change salad",
+    "content_type": 10,
+    "codename": "change_salad"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete salad",
+    "content_type": 10,
+    "codename": "delete_salad"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view salad",
+    "content_type": 10,
+    "codename": "view_salad"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add salad order",
+    "content_type": 11,
+    "codename": "add_saladorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change salad order",
+    "content_type": 11,
+    "codename": "change_saladorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete salad order",
+    "content_type": 11,
+    "codename": "delete_saladorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view salad order",
+    "content_type": 11,
+    "codename": "view_saladorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add platter",
+    "content_type": 12,
+    "codename": "add_platter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change platter",
+    "content_type": 12,
+    "codename": "change_platter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete platter",
+    "content_type": 12,
+    "codename": "delete_platter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view platter",
+    "content_type": 12,
+    "codename": "view_platter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add platter order",
+    "content_type": 13,
+    "codename": "add_platterorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change platter order",
+    "content_type": 13,
+    "codename": "change_platterorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete platter order",
+    "content_type": 13,
+    "codename": "delete_platterorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view platter order",
+    "content_type": 13,
+    "codename": "view_platterorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add sub extra",
+    "content_type": 14,
+    "codename": "add_subextra"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change sub extra",
+    "content_type": 14,
+    "codename": "change_subextra"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete sub extra",
+    "content_type": 14,
+    "codename": "delete_subextra"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view sub extra",
+    "content_type": 14,
+    "codename": "view_subextra"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add sub",
+    "content_type": 15,
+    "codename": "add_sub"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change sub",
+    "content_type": 15,
+    "codename": "change_sub"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete sub",
+    "content_type": 15,
+    "codename": "delete_sub"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view sub",
+    "content_type": 15,
+    "codename": "view_sub"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add sub order",
+    "content_type": 16,
+    "codename": "add_suborder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change sub order",
+    "content_type": 16,
+    "codename": "change_suborder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete sub order",
+    "content_type": 16,
+    "codename": "delete_suborder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view sub order",
+    "content_type": 16,
+    "codename": "view_suborder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add pizza topping",
+    "content_type": 17,
+    "codename": "add_pizzatopping"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change pizza topping",
+    "content_type": 17,
+    "codename": "change_pizzatopping"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete pizza topping",
+    "content_type": 17,
+    "codename": "delete_pizzatopping"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view pizza topping",
+    "content_type": 17,
+    "codename": "view_pizzatopping"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add pizza",
+    "content_type": 18,
+    "codename": "add_pizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change pizza",
+    "content_type": 18,
+    "codename": "change_pizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete pizza",
+    "content_type": 18,
+    "codename": "delete_pizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view pizza",
+    "content_type": 18,
+    "codename": "view_pizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add regular pizza",
+    "content_type": 19,
+    "codename": "add_regularpizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change regular pizza",
+    "content_type": 19,
+    "codename": "change_regularpizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete regular pizza",
+    "content_type": 19,
+    "codename": "delete_regularpizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view regular pizza",
+    "content_type": 19,
+    "codename": "view_regularpizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add sicilian pizza",
+    "content_type": 20,
+    "codename": "add_sicilianpizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change sicilian pizza",
+    "content_type": 20,
+    "codename": "change_sicilianpizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete sicilian pizza",
+    "content_type": 20,
+    "codename": "delete_sicilianpizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view sicilian pizza",
+    "content_type": 20,
+    "codename": "view_sicilianpizza"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can add pizza order",
+    "content_type": 21,
+    "codename": "add_pizzaorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 82,
+  "fields": {
+    "name": "Can change pizza order",
+    "content_type": 21,
+    "codename": "change_pizzaorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 83,
+  "fields": {
+    "name": "Can delete pizza order",
+    "content_type": 21,
+    "codename": "delete_pizzaorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 84,
+  "fields": {
+    "name": "Can view pizza order",
+    "content_type": 21,
+    "codename": "view_pizzaorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 85,
+  "fields": {
+    "name": "Can add final order",
+    "content_type": 22,
+    "codename": "add_finalorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 86,
+  "fields": {
+    "name": "Can change final order",
+    "content_type": 22,
+    "codename": "change_finalorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 87,
+  "fields": {
+    "name": "Can delete final order",
+    "content_type": 22,
+    "codename": "delete_finalorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 88,
+  "fields": {
+    "name": "Can view final order",
+    "content_type": 22,
+    "codename": "view_finalorder"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$m6E4Cpb9SFm7$NcCSJvD+inub+km4Gkbxb5raposg0G+uaNp4u/lc3F4=",
+    "last_login": "2020-04-12T09:05:38.758Z",
+    "is_superuser": true,
+    "username": "manan",
+    "first_name": "",
+    "last_name": "",
+    "email": "manansoni1399@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-04-12T09:05:27.081Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2020-04-12T09:08:07.340Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Garden Salad - 6.25",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2020-04-12T09:08:16.032Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Greek Salad - 8.25",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2020-04-12T09:08:24.121Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Antipasto - 8.25",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2020-04-12T09:08:38.573Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Salad w/Tuna - 8.25",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2020-04-12T09:13:18.231Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Garden Salad - 40 | 65",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2020-04-12T09:13:29.456Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Greek Salad - 50 | 75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2020-04-12T09:13:29.605Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Greek Salad - 50 | 75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2020-04-12T09:13:37.922Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "Antipasto - 50 | 75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2020-04-12T09:13:51.355Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "Baked Ziti - 40 | 65",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2020-04-12T09:14:04.610Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Meatball Parm - 50 | 75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2020-04-12T09:14:16.515Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Chicken Parm - 55 | 85",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2020-04-12T09:14:52.908Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Greek Salad - 50.00 | 75.00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2020-04-12T09:15:46.314Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Baked Ziti w/Meatballs - 6.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2020-04-12T09:15:58.134Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Baked Ziti w/Chicken - 9.75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2020-04-12T09:16:10.784Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Baked Ziti w/Meatballs - 8.75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2020-04-12T09:16:26.592Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Baked Ziti w/Mozzarella - 6.50",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2020-04-12T09:18:35.686Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "2",
+    "object_repr": "reg: Cheese - 12.70 | 17.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2020-04-12T09:18:55.991Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "3",
+    "object_repr": "reg: 1 topping - 13.70 | 19.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2020-04-12T09:19:09.340Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "4",
+    "object_repr": "reg: 2 toppings - 15.20 | 21.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2020-04-12T09:19:27.496Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "5",
+    "object_repr": "reg: 3 toppings - 16.20 | 23.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2020-04-12T09:19:39.181Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "6",
+    "object_repr": "reg: Special - 17.75 | 25.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2020-04-12T09:20:10.326Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "7",
+    "object_repr": "sic: Cheese - 24.45 | 38.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2020-04-12T09:20:21.789Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "8",
+    "object_repr": "sic: 1 topping - 26.45 | 40.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2020-04-12T09:20:35.302Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "9",
+    "object_repr": "sic: 2 toppings - 28.45 | 42.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2020-04-12T09:20:46.031Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "10",
+    "object_repr": "sic: 3 toppings - 29.45 | 44.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2020-04-12T09:21:01.391Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "11",
+    "object_repr": "sic: Special - 30.45 | 45.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2020-04-12T09:22:28.777Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "pizza: Pepperoni",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2020-04-12T09:22:32.892Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "2",
+    "object_repr": "pizza: Sausage",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2020-04-12T09:22:36.960Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "3",
+    "object_repr": "pizza: Mushrooms",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2020-04-12T09:22:45.272Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "4",
+    "object_repr": "pizza: Onion",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2020-04-12T09:22:47.774Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "5",
+    "object_repr": "pizza: Ham",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2020-04-12T09:22:52.492Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "6",
+    "object_repr": "pizza: Canadian Bacon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2020-04-12T09:22:59.062Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "7",
+    "object_repr": "pizza: Pineapple",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2020-04-12T09:23:02.230Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "8",
+    "object_repr": "pizza: Eggplant",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2020-04-12T09:23:06.478Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "9",
+    "object_repr": "pizza: Tomato & Basil",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2020-04-12T09:23:11.043Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "10",
+    "object_repr": "pizza: Green Peppers",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2020-04-12T09:23:15.453Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "11",
+    "object_repr": "pizza: Hamburger",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2020-04-12T09:23:18.271Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "12",
+    "object_repr": "pizza: Spinach",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2020-04-12T09:23:23.948Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "13",
+    "object_repr": "pizza: Artichoke",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2020-04-12T09:23:30.845Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "14",
+    "object_repr": "pizza: Buffalo Chicken",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2020-04-12T09:23:36.606Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "15",
+    "object_repr": "pizza: Barbecue Chicken",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2020-04-12T09:23:40.799Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "16",
+    "object_repr": "pizza: Anchovies",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2020-04-12T09:23:46.316Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "17",
+    "object_repr": "pizza: Black Olives",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2020-04-12T09:23:49.890Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "18",
+    "object_repr": "pizza: Fresh Garlic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2020-04-12T09:23:54.519Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "19",
+    "object_repr": "pizza: Zucchini",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2020-04-12T09:24:19.019Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "sub: Mushrooms - 0.5 | 0.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2020-04-12T09:24:26.366Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "sub: Green Peppers - 0.5 | 0.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2020-04-12T09:24:37.953Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "sub: Onions - 0.5 | 0.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2020-04-12T09:24:44.250Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "sub: Cheese - 0.5 | 0.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2020-04-12T09:25:23.523Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Cheese - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2020-04-12T09:25:33.039Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "Italian - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2020-04-12T09:25:48.083Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "Ham + Cheese - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2020-04-12T09:25:59.007Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "Meatball - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2020-04-12T09:26:08.585Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "Tuna - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2020-04-12T09:26:21.695Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "6",
+    "object_repr": "Turkey - 7.5 | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2020-04-12T09:26:36.081Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "7",
+    "object_repr": "Chicken Parmigiana - 7.5 | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2020-04-12T09:26:49.176Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "8",
+    "object_repr": "Eggplant Parmigiana - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2020-04-12T09:27:01.279Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "9",
+    "object_repr": "Steak - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2020-04-12T09:27:16.600Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "10",
+    "object_repr": "Steak + Cheese - 6.95 | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2020-04-12T09:29:08.491Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "11",
+    "object_repr": "Sausage, Peppers & Onions - None | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2020-04-12T09:29:28.000Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "12",
+    "object_repr": "Hamburger - 4.6 | 6.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2020-04-12T09:29:40.544Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "13",
+    "object_repr": "Cheeseburger - 5.1 | 7.45",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2020-04-12T09:29:59.407Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "14",
+    "object_repr": "Fried Chicken - 6.95 | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2020-04-12T09:30:10.182Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "15",
+    "object_repr": "Veggie - 6.95 | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2020-04-13T14:10:03.782Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "11",
+    "object_repr": "Special - 30.45 | 45.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Num toppings\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2020-04-13T14:10:10.122Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "10",
+    "object_repr": "3 toppings - 29.45 | 44.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Num toppings\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2020-04-13T14:10:16.637Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "9",
+    "object_repr": "2 toppings - 28.45 | 42.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Num toppings\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2020-04-13T14:10:24.227Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "8",
+    "object_repr": "1 topping - 26.45 | 40.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Num toppings\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2020-04-13T14:10:33.132Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "6",
+    "object_repr": "Special - 17.75 | 25.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Num toppings\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2020-04-13T14:10:39.204Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "5",
+    "object_repr": "3 toppings - 16.20 | 23.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Num toppings\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2020-04-13T14:10:46.478Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "4",
+    "object_repr": "2 toppings - 15.20 | 21.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Num toppings\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2020-04-13T14:10:51.535Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "Cheese - 12.70 | 17.95",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2020-04-13T14:10:56.867Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "3",
+    "object_repr": "1 topping - 13.70 | 19.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Num toppings\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2020-04-13T14:43:28.161Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "3",
+    "object_repr": "order: 12.70",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2020-04-13T15:17:36.091Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Order object (4)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2020-04-16T13:39:48.841Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Garden Salad - 6.25",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2020-04-16T13:39:58.175Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Greek Salad - 8.25",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2020-04-16T13:40:04.765Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Antipasto - 8.25",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2020-04-16T13:40:18.050Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Salad w/Tuna - 8.25",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2020-04-16T13:40:47.888Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Garden Salad - 40 | 65",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2020-04-16T13:40:55.665Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Greek Salad - 50 | 75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2020-04-16T13:41:04.351Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Antipasto - 50 | 75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2020-04-16T13:41:16.071Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Baked Ziti - 40 | 65",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2020-04-16T13:41:28.467Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "Meatball Parm - 50 | 75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2020-04-16T13:41:36.935Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "Chicken Parm - 55 | 85",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2020-04-16T13:41:58.866Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Baked Ziti w/Mozzarella - 6.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2020-04-16T13:42:09.583Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Baked Ziti w/Meatballs - 8.75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2020-04-16T13:42:17.409Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Baked Ziti w/Chicken - 9.75",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2020-04-16T13:42:44.686Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "sub: Mushrooms - 0.5 | 0.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2020-04-16T13:42:54.090Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "sub: Green Peppers - 0.5 | 0.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2020-04-16T13:43:00.105Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "sub: Onions - 0.5 | 0.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2020-04-16T13:43:05.742Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "sub: Cheese - 0.5 | 0.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2020-04-16T13:43:42.307Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Cheese - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2020-04-16T13:43:52.288Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "Italian - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2020-04-16T13:44:00.887Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "Ham + Cheese - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2020-04-16T13:44:21.591Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "Meatball - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2020-04-16T13:44:33.144Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "Tuna - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2020-04-16T13:45:00.676Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "6",
+    "object_repr": "Turkey - 7.5 | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2020-04-16T13:45:10.524Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "7",
+    "object_repr": "Chicken Parmigiana - 7.5 | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2020-04-16T13:45:26.922Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "8",
+    "object_repr": "Eggplant Parmigiana - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2020-04-16T13:45:36.945Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "9",
+    "object_repr": "Steak - 6.5 | 7.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2020-04-16T13:45:53.577Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "10",
+    "object_repr": "Steak + Cheese - 6.95 | 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2020-04-16T13:46:08.016Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "11",
+    "object_repr": "Sausage, Peppers & Onions - None | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2020-04-16T13:46:19.922Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "12",
+    "object_repr": "Hamburger - 4.6 | 6.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2020-04-16T13:46:34.350Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "13",
+    "object_repr": "Cheeseburger - 5.1 | 7.45",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2020-04-16T13:46:45.025Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "14",
+    "object_repr": "Fried Chicken - 6.95 | 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2020-04-16T13:46:59.895Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "15",
+    "object_repr": "Veggie - 6.95 | 8.5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2020-04-16T13:47:09.007Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "14",
+    "object_repr": "Fried Chicken - 6.95 | 8.50",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Large price\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2020-04-16T13:47:33.477Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "pizza: Pepperoni",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2020-04-16T13:47:38.130Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "2",
+    "object_repr": "pizza: Sausage",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2020-04-16T13:47:42.100Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "3",
+    "object_repr": "pizza: Mushrooms",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2020-04-16T13:47:45.970Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "4",
+    "object_repr": "pizza: Onion",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2020-04-16T13:47:49.209Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "5",
+    "object_repr": "pizza: Ham",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2020-04-16T13:47:54.739Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "6",
+    "object_repr": "pizza: Canadian Bacon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2020-04-16T13:47:57.987Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "7",
+    "object_repr": "pizza: Pineapple",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2020-04-16T13:48:01.790Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "8",
+    "object_repr": "pizza: Eggplant",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2020-04-16T13:48:06.889Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "9",
+    "object_repr": "pizza: Tomato & Basil",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2020-04-16T13:48:10.711Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "10",
+    "object_repr": "pizza: Green Peppers",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2020-04-16T13:48:15.021Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "11",
+    "object_repr": "pizza: Hamburger",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2020-04-16T13:48:18.763Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "12",
+    "object_repr": "pizza: Spinach",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2020-04-16T13:48:24.349Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "13",
+    "object_repr": "pizza: Artichoke",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2020-04-16T13:48:27.373Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "14",
+    "object_repr": "pizza: Buffalo Chicken",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2020-04-16T13:48:33.182Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "15",
+    "object_repr": "pizza: Barbecue Chicken",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2020-04-16T13:48:37.173Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "16",
+    "object_repr": "pizza: Anchovies",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2020-04-16T13:48:43.461Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "17",
+    "object_repr": "pizza: Black Olives",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2020-04-16T13:48:46.509Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "18",
+    "object_repr": "pizza: Fresh Garlic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2020-04-16T13:48:53.959Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "19",
+    "object_repr": "pizza: Zucchini",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2020-04-16T13:49:28.278Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "1",
+    "object_repr": "reg: Cheese - 12.7 | 17.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2020-04-16T13:49:45.431Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "2",
+    "object_repr": "reg: 1 topping - 13.7 | 17.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2020-04-16T13:49:57.411Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "3",
+    "object_repr": "reg: 2 toppings - 15.2 | 21.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2020-04-16T13:50:11.237Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "4",
+    "object_repr": "reg: 3 toppings - 16.2 | 23.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2020-04-16T13:50:29.121Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "5",
+    "object_repr": "reg: Special - 17.75 | 25.95",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2020-04-16T13:50:48.706Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "6",
+    "object_repr": "sic: Cheese - 24.45 | 38.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2020-04-16T13:51:08.547Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "7",
+    "object_repr": "sic: 1 topping - 26.45 | 40.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2020-04-16T13:51:20.658Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "8",
+    "object_repr": "sic: 2 toppings - 28.45 | 42.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2020-04-16T13:51:33.958Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "9",
+    "object_repr": "sic: 3 toppings - 29.45 | 44.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2020-04-16T13:51:49.532Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "10",
+    "object_repr": "sic: Special - 30.45 | 40.70",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2020-04-17T08:34:14.243Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "7",
+    "object_repr": "1_topping - 26.45 | 40.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2020-04-17T08:34:32.592Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "1_topping - 13.70 | 17.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2020-04-17T08:34:49.644Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "8",
+    "object_repr": "2_toppings - 28.45 | 42.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2020-04-17T08:34:55.915Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "9",
+    "object_repr": "3_toppings - 29.45 | 44.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2020-04-17T08:35:02.966Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "4",
+    "object_repr": "3_toppings - 16.20 | 23.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2020-04-17T08:35:10.260Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "3",
+    "object_repr": "2_toppings - 15.20 | 21.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2020-04-17T08:35:45.055Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "11",
+    "object_repr": "Sausage,Peppers&Onions - None | 8.50",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2020-04-17T08:36:17.997Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "11",
+    "object_repr": "Sausage_Peppers_Onions - None | 8.50",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2020-04-17T08:36:25.496Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "10",
+    "object_repr": "Steak_Cheese - 6.95 | 8.00",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2020-04-17T08:36:34.424Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "8",
+    "object_repr": "Eggplant_Parmigiana - 6.50 | 7.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2020-04-17T08:36:43.070Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "7",
+    "object_repr": "Chicken_Parmigiana - 7.50 | 8.50",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2020-04-17T08:36:51.927Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "Ham_Cheese - 6.50 | 7.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2020-04-17T08:47:36.486Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "9",
+    "object_repr": "3 toppings - 29.45 | 44.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2020-04-17T08:47:43.027Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "8",
+    "object_repr": "2 toppings - 28.45 | 42.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2020-04-17T08:47:49.269Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "7",
+    "object_repr": "1 topping - 26.45 | 40.70",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2020-04-17T08:47:56.344Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "4",
+    "object_repr": "3 toppings - 16.20 | 23.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2020-04-17T08:48:03.835Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "3",
+    "object_repr": "2 toppings - 15.20 | 21.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 155,
+  "fields": {
+    "action_time": "2020-04-17T08:48:10.177Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "1 topping - 13.70 | 17.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 156,
+  "fields": {
+    "action_time": "2020-04-17T08:48:27.880Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "11",
+    "object_repr": "Sausage, Peppers & Onions - None | 8.50",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 157,
+  "fields": {
+    "action_time": "2020-04-17T08:48:37.487Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "10",
+    "object_repr": "Steak + Cheese - 6.95 | 8.00",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 158,
+  "fields": {
+    "action_time": "2020-04-17T08:48:44.821Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "8",
+    "object_repr": "Eggplant Parmigiana - 6.50 | 7.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 159,
+  "fields": {
+    "action_time": "2020-04-17T08:48:50.482Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "7",
+    "object_repr": "Chicken Parmigiana - 7.50 | 8.50",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 160,
+  "fields": {
+    "action_time": "2020-04-17T08:48:58.229Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "Ham + Cheese - 6.50 | 7.95",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 161,
+  "fields": {
+    "action_time": "2020-04-18T08:50:09.598Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Order",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 162,
+  "fields": {
+    "action_time": "2020-04-18T08:50:09.762Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Order",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 163,
+  "fields": {
+    "action_time": "2020-04-18T08:50:09.779Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Order",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 164,
+  "fields": {
+    "action_time": "2020-04-18T08:50:09.818Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Order",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 165,
+  "fields": {
+    "action_time": "2020-04-18T09:16:52.063Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Order",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 166,
+  "fields": {
+    "action_time": "2020-04-18T09:24:18.712Z",
+    "user": 1,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "final order - 2020-04-18 09:24:18.711742 - 0",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 167,
+  "fields": {
+    "action_time": "2020-04-18T10:09:33.510Z",
+    "user": 1,
+    "content_type": 22,
+    "object_id": "2",
+    "object_repr": "final order - 21.95",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 168,
+  "fields": {
+    "action_time": "2020-04-18T10:09:53.323Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "9",
+    "object_repr": "order: 21.95",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 169,
+  "fields": {
+    "action_time": "2020-04-18T10:09:53.426Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "8",
+    "object_repr": "order: 21.95",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 170,
+  "fields": {
+    "action_time": "2020-04-18T10:09:53.836Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "7",
+    "object_repr": "order: 21.95",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 171,
+  "fields": {
+    "action_time": "2020-04-18T10:09:53.984Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "6",
+    "object_repr": "order: 17.95",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 172,
+  "fields": {
+    "action_time": "2020-04-18T10:21:35.855Z",
+    "user": 1,
+    "content_type": 22,
+    "object_id": "3",
+    "object_repr": "Final order #3 -  - 21.95\n\tPizzaOrder: 21.95\n\tOnion\n\tCanadian Bacon",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 173,
+  "fields": {
+    "action_time": "2020-04-18T10:21:46.743Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "11",
+    "object_repr": "PizzaOrder: 21.95\n\tOnion\n\tCanadian Bacon",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 174,
+  "fields": {
+    "action_time": "2020-04-18T10:21:46.835Z",
+    "user": 1,
+    "content_type": 21,
+    "object_id": "10",
+    "object_repr": "PizzaOrder: 17.95\n\tSausage",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 175,
+  "fields": {
+    "action_time": "2020-04-18T10:40:24.070Z",
+    "user": 1,
+    "content_type": 22,
+    "object_id": "4",
+    "object_repr": "Final order #4 - Manan - 16.00\n\tSubOrder: 7.50\n\tSubExtra: Mushrooms - 0.50 | 0.50\n\tSubExtra: Onions - 0.50 | 0.50\n\tSubOrder: 8.50",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Finished\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 176,
+  "fields": {
+    "action_time": "2020-04-18T11:40:38.842Z",
+    "user": 1,
+    "content_type": 22,
+    "object_id": "5",
+    "object_repr": "Final order #5 - Manan - 17.95\n\tPizzaOrder: 17.95",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 177,
+  "fields": {
+    "action_time": "2020-04-18T11:41:09.191Z",
+    "user": 1,
+    "content_type": 22,
+    "object_id": "4",
+    "object_repr": "Final order #4 - Manan - 16.00\n\tSubOrder: 7.50\n\tSubExtra: Mushrooms - 0.50 | 0.50\n\tSubExtra: Onions - 0.50 | 0.50\n\tSubOrder: 8.50",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Finished\"]}}]"
+  }
+}
+]
