@@ -13,20 +13,20 @@ The pages are:
 * [Paint](https://manansoni42.github.io/web-dev/frontend/paint.html) - A paint like application where you can draw on the screen with your mouse (HTML(SVG), CSS, JavaScript(Handlebars, D3))
 
 ## Notes
-A dynamic website created using Flask, HTML and CSS (along with Bootstrap) where you can jot down post-it style notes. Know more at [notes](https://github.com/MananSoni42/web-dev/tree/master/notes).
+[Source code](https://github.com/MananSoni42/web-dev/tree/master/notes) | [Live demo](https://notes42-app.herokuapp.com/)
 
 ## Flights
-A sample flights website, where you can book flights and see details about all the flights. Built using HTML, CSS, Flask and Postgre SQL. For more details, visit [flights](https://github.com/MananSoni42/web-dev/tree/master/sql-orm).
+[Source code](https://github.com/MananSoni42/web-dev/tree/master/sql-orm).
 
 ## CS50 projects
 ### Project 1 - Books
-This project was done as a part of the CS50 course. The original instructions can be found [here](https://docs.cs50.net/ocw/web/projects/1/project1.html). View the full project at  [books](https://github.com/MananSoni42/web-dev/tree/master/books).
+[Instructions](https://docs.cs50.net/ocw/web/projects/1/project1.html) | [Source code](https://github.com/MananSoni42/web-dev/tree/master/books) | [Live demo](http://books42-app.herokuapp.com/)
 
 ### Project 2 - Flack
-This project was done as a part of the CS50 course. The original instructions can be found [here](https://docs.cs50.net/web/2018/x/projects/2/project2.html). View the full project at  [flack](https://github.com/MananSoni42/web-dev/tree/master/flack).
+[Instructions](https://docs.cs50.net/web/2018/x/projects/2/project2.html) | [Source code](https://github.com/MananSoni42/web-dev/tree/master/flack) | [Live demo](http://flack42-app.herokuapp.com/)
 
 ### Project 3 - Pizza
-This project was done as a part of the CS50 course. The original instructions can be found [here](https://docs.cs50.net/ocw/web/projects/3/project3.html). View the full project at  [pizza](https://github.com/MananSoni42/web-dev/tree/master/pizza).
+[Instructions](https://docs.cs50.net/ocw/web/projects/3/project3.html) | [Source code](https://github.com/MananSoni42/web-dev/tree/master/pizza) | [Live demo](http://pizzza42-app.herokuapp.com/)
 
 ## License
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) License
