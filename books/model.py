@@ -48,8 +48,8 @@ class User(db.Model):
 class Review(db.Model):
     __tablename__ = "passengers"
     id = db.Column(db.Integer, primary_key=True)
-    uid = db.Column(db.String, db.ForeignKey("users.id"), nullable=False)
-    bid = db.Column(db.String, db.ForeignKey("books.id"), nullable=False)
+    uid = db.Column(db.String, db.ForeignKey("users.uname"), nullable=False)
+    bid = db.Column(db.String, db.ForeignKey("books.isbn"), nullable=False)
     rating = db.Column(db.Integer, nullable=False)
     title = db.Column(db.String, nullable=False)
     body = db.Column(db.String, nullable=False)

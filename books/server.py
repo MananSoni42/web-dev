@@ -5,7 +5,7 @@ from utils import get_image_url, get_book_info, get_rating_info, get_book_basic_
 
 app = Flask(__name__)
 app.secret_key = "RandOM PasSwoRd"
-app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://manan:password@localhost/manan'
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://manan:psql@localhost/manan'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app)
 with app.app_context():
@@ -89,6 +89,7 @@ def home():
         if count > MAX_BOOK_HOME:
             break
         if not book.img_url:
+            print(book.isbn,count)
             db.session.query(Book).filter(Book.isbn == book.isbn).update({'img_url': get_image_url(book.isbn)})
             db.session.commit()
         book_info = {
