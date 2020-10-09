@@ -14,3 +14,5 @@ localhost:5000/your_name_here
 ## Screens
 <img src="./screens/1.png" alt="img" width="400px"> <img src="./screens/2.png" alt="img" width="400px"> <img src="./screens/3.png" alt="img" width="400px"> <img src="./screens/4.png" alt="img" width="400px">
 
+## License
+This project is licensed under the [MIT](https://opensource.org/licenses/MIT) License
