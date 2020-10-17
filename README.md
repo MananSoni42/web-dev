@@ -11,6 +11,7 @@ The pages are:
 * [Scroller](https://manansoni42.github.io/web-dev/frontend/inf_scroll.html) - An infinite list of posts that generates new posts as soon as you reach the bottom of the page (HTML, CSS(animation), JavaScript)
 * [Clock](https://manansoni42.github.io/web-dev/frontend/clock.html) - An analog clock that shows your system time (HTML(SVG), CSS, JavaScript)
 * [Paint](https://manansoni42.github.io/web-dev/frontend/paint.html) - A paint like application where you can draw on the screen with your mouse (HTML(SVG), CSS, JavaScript(Handlebars, D3))
+* [Pomodoro Timer](https://manansoni42.github.io/web-dev/frontend/pomodoro.html) - A Pomodoro Timer is a productivity system that helps you take the right number of breaks while still getting your work done.
 
 ## Notes
 [Source code](https://github.com/MananSoni42/web-dev/tree/master/notes) | [Live demo](https://notes42-app.herokuapp.com/)
