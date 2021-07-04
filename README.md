@@ -1,7 +1,7 @@
 # Web Developement
 Learning full stack development through [CS50's Web Programming]([https://www.youtube.com/playlist?list=PLhQjrBD2T382hIW-IsOVuXP1uMzEvmcE5](https://www.youtube.com/playlist?list=PLhQjrBD2T382hIW-IsOVuXP1uMzEvmcE5)) with Python and JavaScript.
 
-## Frontend
+## Basic Frontend
 Contains basic static pages created using only HTML, CSS and JavaScript. The pages can be opened directly in your browser (or you can click the links below).
 The pages are:
 * [nav](https://manansoni42.github.io/web-dev/frontend/nav.html) - A basic navigation bar with clickable buttons (HTML & CSS)
@@ -13,13 +13,21 @@ The pages are:
 * [Paint](https://manansoni42.github.io/web-dev/frontend/paint.html) - A paint like application where you can draw on the screen with your mouse (HTML(SVG), CSS, JavaScript(Handlebars, D3))
 * [Pomodoro Timer](https://manansoni42.github.io/web-dev/frontend/pomodoro.html) - A Pomodoro Timer is a productivity system that helps you take the right number of breaks while still getting your work done.
 
-## Notes
-[Source code](https://github.com/MananSoni42/web-dev/tree/master/notes) | [Live demo](https://notes42-app.herokuapp.com/)
+## Frontend using React
+Using the React framework to create responsive, stateful web-pages
 
-## Flights
-[Source code](https://github.com/MananSoni42/web-dev/tree/master/sql-orm).
+### simple games in React
+[Source code](https://github.com/MananSoni42/web-dev/tree/master/react-games) | [Live demo](https://manansoni42.github.io/web-dev/)
+
 
 ## CS50 projects
+
+### Notes
+[Source code](https://github.com/MananSoni42/web-dev/tree/master/notes) | [Live demo](https://notes42-app.herokuapp.com/)
+
+### Flights
+[Source code](https://github.com/MananSoni42/web-dev/tree/master/sql-orm).
+
 ### Project 1 - Books
 [Instructions](https://docs.cs50.net/ocw/web/projects/1/project1.html) | [Source code](https://github.com/MananSoni42/web-dev/tree/master/books) | [Live demo](http://books42-app.herokuapp.com/)
 
@@ -28,11 +36,6 @@ The pages are:
 
 ### Project 3 - Pizza
 [Instructions](https://docs.cs50.net/ocw/web/projects/3/project3.html) | [Source code](https://github.com/MananSoni42/web-dev/tree/master/pizza) | [Live demo](http://pizzza42-app.herokuapp.com/)
-
-## React Projects
-
-### simple games in React
-[Source code](https://github.com/MananSoni42/web-dev/tree/master/react-games) | [Live demo](https://manansoni42.github.io/web-dev/)
 
 ## License
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) License
