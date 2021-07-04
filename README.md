@@ -29,5 +29,10 @@ The pages are:
 ### Project 3 - Pizza
 [Instructions](https://docs.cs50.net/ocw/web/projects/3/project3.html) | [Source code](https://github.com/MananSoni42/web-dev/tree/master/pizza) | [Live demo](http://pizzza42-app.herokuapp.com/)
 
+## React Projects
+
+### simple games in React
+[Source code](https://github.com/MananSoni42/web-dev/tree/master/react-games) | [Live demo](https://manansoni42.github.io/web-dev/)
+
 ## License
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) License
